@@ -1,0 +1,22 @@
+Default Mapdata display only:
+  Points
+  Building
+  Landuse
+    maybe: disable residential, commercial and some other
+  past/future
+  others
+
+
+Implement Oauth handling
+
+Presets:
+  a guided "Tour"
+    Needs first
+    Second interaction
+    Identity third
+    fourth "Main Tag"
+    then all others
+
+
+Future:
+  Quick "Switch to OSM Mode" with full features
