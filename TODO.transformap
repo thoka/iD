@@ -17,6 +17,49 @@ Presets:
     fourth "Main Tag"
     then all others
 
+fuckfuckfuck no multiselect-box!
+
+in defaults.json are defaults for each datatype (point,line,area)
+  → change to our will :-)
+
+  groups can be added
+    it's like drop-downs for single presets
+
+which tags should be supported on default?
+
+name, description
+addr
+provides/topic
+identity
+interaction
+
+extra fields:
+  contact data
+  smoking
+  wheelchair
+  start_date
+  fee
+  access (members/public)
+  internet access
+
+  organic
+  regional
+  fair_trade
+
+  POI-Typen... (amenity,shop,landuse,club,...)
+
+  1st "Screen": 
+    • TransforMap Taxonomey
+      → guided Tour
+    • Classic OSM Object
+      → conventional things
+
+Todo:
+  how are translations handled?
+
+Remove "Tutorial" questions, or replace with TransforMap tutorial
 
 Future:
   Quick "Switch to OSM Mode" with full features
+  Photo upload - ends on other server (mediawiki?), sets link as "image" tag
+  adding of Events - ends on other server
