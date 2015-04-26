@@ -1,4 +1,4 @@
-Default Mapdata display only:
+Default Mapdata display only: -OK
   Points
   Building
   Landuse
@@ -18,6 +18,7 @@ Presets:
     then all others
 
 fuckfuckfuck no multiselect-box!
+  atm, choose normal select-box, fix later
 
 in defaults.json are defaults for each datatype (point,line,area)
   → change to our will :-)
