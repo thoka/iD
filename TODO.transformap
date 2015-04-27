@@ -23,8 +23,14 @@ fuckfuckfuck no multiselect-box!
 in defaults.json are defaults for each datatype (point,line,area)
   → change to our will :-)
 
-  groups can be added
+  groups ("categories") can be added
     it's like drop-downs for single presets
+
+  possibilities:
+    one group for "provides", one for "topic"
+      the pre-fill this value on a bigger form with our tax
+        "minor" tags via "add field"
+
 
 which tags should be supported on default?
 
