@@ -1,0 +1,16 @@
+{
+    "fields": [
+        "topic",
+        "identity",
+        "interaction",
+        "address"
+    ],
+    "geometry": [
+        "point",
+        "area"
+    ],
+    "tags": {
+        "topic": "*"
+    },
+    "name": "TransforMap: Organisation caring about needs"
+}

@@ -19,10 +19,8 @@
         "line"
     ],
     "point": [
-        "leisure/park",
-        "amenity/bank",
-        "shop/supermarket",
-        "transfortest",
+        "transfor-direct",
+        "transfor-indirect",
         "point"
     ],
     "vertex": [
