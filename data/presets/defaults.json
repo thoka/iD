@@ -21,6 +21,7 @@
     "point": [
         "transfor-direct",
         "transfor-indirect",
+        "transfortest",
         "point"
     ],
     "vertex": [
