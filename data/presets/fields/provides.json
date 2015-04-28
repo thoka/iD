@@ -1,5 +1,5 @@
 {
-    "key": "topic",
+    "key": "provides",
     "type": "combo",
     "label": "Needs fulfilled by a community",
     "placeholder": "food+drink , water, land, ...",
