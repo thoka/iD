@@ -9219,6 +9219,22 @@
         ],
         "name": "Raised Pedestrian Crossing"
     },
+    "transfortest": {
+        "fields": [
+            "provides",
+            "topic",
+            "identity",
+            "address"
+        ],
+        "geometry": [
+            "point",
+            "area"
+        ],
+        "tags": {
+            "provides": "*"
+        },
+        "name": "TransforMap Object"
+    },
     "type/boundary": {
         "geometry": [
             "relation"

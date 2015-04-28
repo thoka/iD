@@ -1,7 +1,9 @@
 {
     "fields": [
-        "address",
-        "provides"
+        "provides",
+        "topic",
+        "identity",
+        "address"
     ],
     "geometry": [
         "point",

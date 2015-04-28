@@ -1,0 +1,18 @@
+{
+    "key": "identity",
+    "type": "radio",
+    "label": "Self-Description of a Community",
+    "placeholder": "commons,transition_initiative,...",
+    "options": [
+    	"solidarity_economy",
+    	"transition_initiative",
+    	"permaculture",
+    	"demonetized_economy",
+    	"community_based_currencies",
+    	"commons",
+    	"economy_for_the_common_good",
+    	"collaborative_economy",
+    	"global_ecovillage_network"
+    ]
+
+} 
