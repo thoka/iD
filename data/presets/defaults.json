@@ -28,6 +28,7 @@
         "amenity/bar",
         "amenity/bank",
         "shop/supermarket",
+        "transfortest",
         "point"
     ],
     "vertex": [

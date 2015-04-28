@@ -1,0 +1,14 @@
+{
+    "fields": [
+        "address",
+        "provides"
+    ],
+    "geometry": [
+        "point",
+        "area"
+    ],
+    "tags": {
+        "provides": "*"
+    },
+    "name": "TransforMap Object"
+}

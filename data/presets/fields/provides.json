@@ -1,0 +1,25 @@
+{
+    "key": "provides",
+    "type": "radio",
+    "label": "Fulfils Needs",
+    "placeholder": "food+drink,water,land,...",
+    "options": [
+    	"food+drink",
+    	"water",
+    	"land",
+    	"mobility",
+    	"health",
+    	"culture",
+    	"safety",
+    	"housing",
+    	"spaces",
+    	"objects_of_utility",
+    	"clothes",
+    	"learning_opportunities",
+    	"energy",
+    	"community",
+    	"participation",
+    	"spirituality"
+    ]
+
+} 
