@@ -1,0 +1,17 @@
+{
+    "key": "interaction",
+    "type": "radio",
+    "label": "Mode of Interaction",
+    "placeholder": "bartering,cousing,...",
+    "options": [
+    	"bartering",
+    	"lending",
+    	"renting",
+    	"gifting",
+    	"rebuying_reselling",
+    	"cousing",
+    	"diy_and_dit",
+    	"buying_and_selling"
+    ]
+
+} 

@@ -3,6 +3,7 @@
         "provides",
         "topic",
         "identity",
+        "interaction",
         "address"
     ],
     "geometry": [
