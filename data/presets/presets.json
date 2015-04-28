@@ -9219,11 +9219,44 @@
         ],
         "name": "Raised Pedestrian Crossing"
     },
+    "transfor-direct": {
+        "fields": [
+            "provides",
+            "identity",
+            "interaction",
+            "address"
+        ],
+        "geometry": [
+            "point",
+            "area"
+        ],
+        "tags": {
+            "provides": "*"
+        },
+        "name": "TransforMap: POI fulfilling direct needs"
+    },
+    "transfor-indirect": {
+        "fields": [
+            "topic",
+            "identity",
+            "interaction",
+            "address"
+        ],
+        "geometry": [
+            "point",
+            "area"
+        ],
+        "tags": {
+            "topic": "*"
+        },
+        "name": "TransforMap: Organisation caring about needs"
+    },
     "transfortest": {
         "fields": [
             "provides",
             "topic",
             "identity",
+            "interaction",
             "address"
         ],
         "geometry": [
