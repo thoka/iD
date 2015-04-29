@@ -18,7 +18,7 @@ Presets:
     then all others
 
 fuckfuckfuck no multiselect-box!
-  atm, choose normal select-box, fix later
+  atm, choose normal radio-box, fix later
 
 in defaults.json are defaults for each datatype (point,line,area)
   → change to our will :-)
@@ -30,6 +30,40 @@ in defaults.json are defaults for each datatype (point,line,area)
     one group for "provides", one for "topic"
       the pre-fill this value on a bigger form with our tax
         "minor" tags via "add field"
+
+    group: provides
+      and therein all single presets from the presets ethercalc!
+          e.g.: provides=food -> restaurant,shop,fairteiler,csa,...
+        other transformap features included on each single preset
+
+    sobald ein Objekt nicht mehr einem preset entspricht, switcht er auf ein neues...
+      lässt sich das für chainloading missbrauchen?
+
+  how to add a new preset
+      make fügt die einzelnen .jsons in die großen (data/presets/presets.json, presets.yaml, 
+    add the category in presets/categories.json -ist die sammelversion von categories/*json
+    add the preset in presets/${key}.json   - ist zum matchen des key=*
+    add single presets in presets/${key}/${value}.json
+      if any new fields used: 
+        add it to fields/${field-name}.json
+          valid types: 
+            - text     # self-explanatory 
+            - textarea # bigger textarea
+            - radio    # 
+                kann entweder: viele keys mit value=yes
+                oder ein key mit unterschiedlichen values
+            - combo    # normal dropdown
+            - access   # special : many dropdowns with same values on different keys
+            - address  # #special
+            - typecombo # LINK-FORWARDER hidden as combo-box -> when chosen, jumps to another preset! (sometimes??)
+            - number   # klar
+            - "tel",
+            - localized #used for name tags, offers "translate"
+            - check
+            - defaultcheck
+            - maxspeed # special: text with unut
+    add it to "defaults.json", if wished
+      
 
 
 which tags should be supported on default?
@@ -63,6 +97,7 @@ extra fields:
 
 Todo:
   how are translations handled?
+  default length of dropdown 4 → 8?
 
 Remove "Tutorial" questions, or replace with TransforMap tutorial
 
