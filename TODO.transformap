@@ -78,14 +78,14 @@ extra fields:
   contact data
   smoking
   wheelchair
-  start_date
+  start_date -OK
   fee
   access (members/public)
   internet access
 
-  organic
-  regional
-  fair_trade
+  organic -OK
+  regional -OK
+  fair_trade -OK
 
   POI-Typen... (amenity,shop,landuse,club,...)
 
