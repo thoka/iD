@@ -1,0 +1,25 @@
+{
+    "icon": "pub",
+    "fields": [
+        "cuisine",
+        "operator",
+        "address",
+        "building_area",
+        "opening_hours",
+        "takeaway",
+        "delivery",
+        "drive_through",
+        "smoking"
+    ],
+    "geometry": [
+        "point",
+        "area"
+    ],
+    "tags": {
+        "amenity": "biergarten"
+    },
+    "terms": [
+        "restaurant"
+    ],
+    "name": "Biergarten"
+}

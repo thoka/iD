@@ -130,6 +130,10 @@
         },
         {
             "key": "amenity",
+            "value": "biergarten"
+        },
+        {
+            "key": "amenity",
             "value": "boat_rental"
         },
         {
@@ -605,6 +609,9 @@
         {
             "key": "building",
             "value": "warehouse"
+        },
+        {
+            "key": "club"
         },
         {
             "key": "craft"
@@ -1167,6 +1174,10 @@
         {
             "key": "leisure",
             "value": "golf_course"
+        },
+        {
+            "key": "leisure",
+            "value": "hackerspace"
         },
         {
             "key": "leisure",

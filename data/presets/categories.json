@@ -55,6 +55,30 @@
             "highway/steps"
         ]
     },
+    "category-pois": {
+        "geometry": "point",
+        "name": "POIs (amenities)",
+        "icon": "circle-stroked",
+        "members": [
+            "amenity/library",
+            "amenity/public_bookcase",
+            "amenity/social_facility",
+            "amenity/theatre",
+            "amenity/car_sharing",
+            "amenity/studio",
+            "amenity/bicycle_rental",
+            "amenity/community_centre",
+            "amenity/school",
+            "amenity/university",
+            "amenity/kindergarten",
+            "amenity/college",
+            "amenity/drinking_water",
+            "leisure/garden",
+            "leisure/hackerspace",
+            "natural/tree",
+            "club"
+        ]
+    },
     "category-rail": {
         "geometry": "line",
         "name": "Rail",
@@ -123,6 +147,21 @@
             "type/route/detour",
             "type/route_master",
             "type/route"
+        ]
+    },
+    "category-shopping": {
+        "geometry": "point",
+        "name": "shopping/dinner",
+        "icon": "category-path",
+        "members": [
+            "amenity/bar",
+            "amenity/restaurant",
+            "amenity/pub",
+            "amenity/cafe",
+            "amenity/biergarten",
+            "amenity/fast_food",
+            "amenity/marketplace",
+            "amenity/community_centre"
         ]
     },
     "category-water-area": {

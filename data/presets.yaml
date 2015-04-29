@@ -9,6 +9,8 @@ en:
         name: Land Use
       category-path:
         name: Path
+      category-pois:
+        name: POIs (amenities)
       category-rail:
         name: Rail
       category-restriction:
@@ -17,6 +19,8 @@ en:
         name: Road
       category-route:
         name: Route
+      category-shopping:
+        name: shopping/dinner
       category-water-area:
         name: Water
       category-water-line:
@@ -153,6 +157,43 @@ en:
         options:
           clockwise: Clockwise
           anticlockwise: Counterclockwise
+      club:
+        label: Club
+        placeholder: "Yes, Sports, Artist, Chess, ..."
+        options:
+          "yes": "Yes: If not known further"
+          sport: "+ sport=*"
+          art: Artist club
+          astronomy: An amateur astronomy club
+          automobile: Automobile club
+          bicycle: Promote and enjoy bicycle usage (for competitions see sport + sport=cycling)
+          charity: "A club devoted to charitable activities: blood/tissues donation, humanitarian,.."
+          chess: Chess club
+          cinema: Cinema club
+          cooking: Cooking club
+          culture: "A cultural club that doesn't fit in other categories. Consider to use a specific new value instead of this."
+          doityourself: "Do it yourself club (electronics, clothes,..)"
+          elderly: A club restricted to aged people
+          ethnic: A club to promote ethnic or inter-ethnic culture.
+          fan: A fanclub
+          fishing: (for competitions see sport + sport=fishing)
+          freemasonry: A Masonic Lodge/temple/hall used by Freemasons.
+          game: A club devoted to games.
+          board_games: A club devoted to board games.
+          history: A club devoted to (local) history and traditions
+          hunting: (see also sport+sport=shooting)
+          linux: A Linux User Group (LUG)
+          music: A club where people sing or play music
+          nature: "A club devoted to nature study: mushrooms, rocks, flowers, birdwatching,and so on. Consider if create specific values for each of these."
+          nudism: Nudist Club
+          photography: Photographer club
+          politics: politic club
+          religion: "+ religion=* + denomination=*"
+          scout: A scout group base
+          smoke: "smoker's club"
+          theatre: theatre club
+          veterans: "A club of war veterans (e.g.: in italy \"Gruppo alpini\" or \"Gruppo partigiani\")."
+          youth: A club restricted to young people
       collection_times:
         label: Collection Times
       construction:
@@ -786,6 +827,9 @@ en:
       amenity/bicycle_repair_station:
         name: Bicycle Repair Station
         terms: "<translate with synonyms or related terms for 'Bicycle Repair Station', separated by commas>"
+      amenity/biergarten:
+        name: Biergarten
+        terms: "<translate with synonyms or related terms for 'Biergarten', separated by commas>"
       amenity/boat_rental:
         name: Boat Rental
         terms: "<translate with synonyms or related terms for 'Boat Rental', separated by commas>"
@@ -1146,6 +1190,9 @@ en:
       building/warehouse:
         name: Warehouse
         terms: "<translate with synonyms or related terms for 'Warehouse', separated by commas>"
+      club:
+        name: club
+        terms: "<translate with synonyms or related terms for 'club', separated by commas>"
       craft:
         name: Craft
         terms: "<translate with synonyms or related terms for 'Craft', separated by commas>"
@@ -1572,6 +1619,9 @@ en:
       leisure/golf_course:
         name: Golf Course
         terms: "<translate with synonyms or related terms for 'Golf Course', separated by commas>"
+      leisure/hackerspace:
+        name: Hackerspace
+        terms: "<translate with synonyms or related terms for 'Hackerspace', separated by commas>"
       leisure/ice_rink:
         name: Ice Rink
         terms: "<translate with synonyms or related terms for 'Ice Rink', separated by commas>"

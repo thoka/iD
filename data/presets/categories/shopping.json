@@ -1,0 +1,15 @@
+{
+    "geometry": "point",
+    "name": "shopping/dinner",
+    "icon": "category-path",
+    "members": [
+        "amenity/bar",
+        "amenity/restaurant",
+        "amenity/pub",
+        "amenity/cafe",
+        "amenity/biergarten",
+        "amenity/fast_food",
+        "amenity/marketplace",
+        "amenity/community_centre"
+    ]
+}

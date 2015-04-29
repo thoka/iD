@@ -1,0 +1,19 @@
+{
+    "icon": "pitch",
+    "fields": [
+        "address",
+        "building_area",
+        "opening_hours"
+    ],
+    "geometry": [
+        "point",
+        "area"
+    ],
+    "tags": {
+        "leisure": "hackerspace"
+    },
+    "terms": [
+        "hacklab"
+    ],
+    "name": "Hackerspace"
+}

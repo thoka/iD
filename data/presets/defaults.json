@@ -21,6 +21,8 @@
     "point": [
         "transfor-direct",
         "transfor-indirect",
+        "category-pois",
+        "category-shopping",
         "transfortest",
         "point"
     ],

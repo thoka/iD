@@ -52,16 +52,16 @@ in defaults.json are defaults for each datatype (point,line,area)
             - radio    # 
                 kann entweder: viele keys mit value=yes
                 oder ein key mit unterschiedlichen values
-            - combo    # normal dropdown
+            - combo    # normal dropdown for one key/many values
             - access   # special : many dropdowns with same values on different keys
             - address  # #special
-            - typecombo # LINK-FORWARDER hidden as combo-box -> when chosen, jumps to another preset! (sometimes??)
+            - typeCombo # LINK-FORWARDER hidden as combo-box for generic keys -> when chosen, jumps to another preset! (sometimes??)
             - number   # klar
             - "tel",
             - localized #used for name tags, offers "translate"
             - check
             - defaultcheck
-            - maxspeed # special: text with unut
+            - maxspeed # special: text with unit
     add it to "defaults.json", if wished
       
 
@@ -98,6 +98,10 @@ extra fields:
 Todo:
   how are translations handled?
   default length of dropdown 4 → 8?
+
+how to add presets for existing features?
+
+how to set "Main Tag" in OSM?
 
 Remove "Tutorial" questions, or replace with TransforMap tutorial
 

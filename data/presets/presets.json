@@ -524,6 +524,31 @@
         },
         "name": "Bicycle Repair Station"
     },
+    "amenity/biergarten": {
+        "icon": "pub",
+        "fields": [
+            "cuisine",
+            "operator",
+            "address",
+            "building_area",
+            "opening_hours",
+            "takeaway",
+            "delivery",
+            "drive_through",
+            "smoking"
+        ],
+        "geometry": [
+            "point",
+            "area"
+        ],
+        "tags": {
+            "amenity": "biergarten"
+        },
+        "terms": [
+            "restaurant"
+        ],
+        "name": "Biergarten"
+    },
     "amenity/boat_rental": {
         "fields": [
             "operator"
@@ -2638,6 +2663,26 @@
             "building": "warehouse"
         },
         "name": "Warehouse"
+    },
+    "club": {
+        "fields": [
+            "description",
+            "provides",
+            "topic",
+            "identity",
+            "interaction",
+            "club",
+            "address",
+            "fee"
+        ],
+        "geometry": [
+            "point",
+            "area"
+        ],
+        "tags": {
+            "club": "*"
+        },
+        "name": "club"
     },
     "craft": {
         "icon": "marker-stroked",
@@ -4969,6 +5014,25 @@
             "leisure": "golf_course"
         },
         "name": "Golf Course"
+    },
+    "leisure/hackerspace": {
+        "icon": "pitch",
+        "fields": [
+            "address",
+            "building_area",
+            "opening_hours"
+        ],
+        "geometry": [
+            "point",
+            "area"
+        ],
+        "tags": {
+            "leisure": "hackerspace"
+        },
+        "terms": [
+            "hacklab"
+        ],
+        "name": "Hackerspace"
     },
     "leisure/ice_rink": {
         "icon": "pitch",
