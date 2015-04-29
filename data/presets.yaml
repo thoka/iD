@@ -54,6 +54,9 @@ en:
           destination:
             title: Destination
             description: Access permitted only to reach a destination
+      access_clubs:
+        label: Access
+        placeholder: "yes"
       access_simple:
         label: Access
         placeholder: "yes"
@@ -312,6 +315,9 @@ en:
         label: Source
       generator/type:
         label: Type
+      genus:
+        label: "Genus: low level taxonomy rank"
+        placeholder: main key latin
       golf_hole:
         label: Reference
         placeholder: Hole number (1-18)
@@ -652,6 +658,9 @@ en:
         placeholder: "Homeless, Disabled, Child, etc"
       source:
         label: Source
+      species:
+        label: "Species: scientific name"
+        placeholder: main key latin
       sport:
         label: Sport
       sport_ice:
@@ -1628,6 +1637,9 @@ en:
       leisure/common:
         name: Common
         terms: "<translate with synonyms or related terms for 'Common', separated by commas>"
+      leisure/communitygarden:
+        name: Community Garden
+        terms: "<translate with synonyms or related terms for 'Community Garden', separated by commas>"
       leisure/dog_park:
         name: Dog Park
         terms: "<translate with synonyms or related terms for 'Dog Park', separated by commas>"

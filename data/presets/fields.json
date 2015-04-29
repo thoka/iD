@@ -49,6 +49,19 @@
             }
         }
     },
+    "access_clubs": {
+        "key": "access",
+        "type": "combo",
+        "label": "Access",
+        "placeholder": "yes",
+        "options": [
+            "public",
+            "permissive",
+            "private",
+            "members",
+            "no"
+        ]
+    },
     "access_simple": {
         "key": "access",
         "type": "combo",
@@ -592,6 +605,12 @@
         "type": "combo",
         "label": "Type"
     },
+    "genus": {
+        "key": "genus",
+        "type": "localized",
+        "label": "Genus: low level taxonomy rank",
+        "placeholder": "main key latin"
+    },
     "golf_hole": {
         "key": "ref",
         "type": "text",
@@ -692,6 +711,7 @@
         "key": "internet_access",
         "type": "combo",
         "label": "Internet Access",
+        "universal": true,
         "strings": {
             "options": {
                 "yes": "Yes",
@@ -1268,6 +1288,12 @@
         "icon": "source",
         "universal": true,
         "label": "Source"
+    },
+    "species": {
+        "key": "species",
+        "type": "localized",
+        "label": "Species: scientific name",
+        "placeholder": "main key latin"
     },
     "sport": {
         "key": "sport",

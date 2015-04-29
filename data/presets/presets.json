@@ -4958,6 +4958,27 @@
         },
         "name": "Common"
     },
+    "leisure/communitygarden": {
+        "icon": "garden",
+        "fields": [
+            "provides",
+            "identity",
+            "interaction",
+            "access_club",
+            "operator",
+            "address"
+        ],
+        "geometry": [
+            "point",
+            "vertex",
+            "area"
+        ],
+        "tags": {
+            "leisure": "garden",
+            "garden:type": "community"
+        },
+        "name": "Community Garden"
+    },
     "leisure/dog_park": {
         "icon": "dog-park",
         "geometry": [
@@ -5823,6 +5844,9 @@
     },
     "natural/tree": {
         "fields": [
+            "access_clubs",
+            "species",
+            "genus",
             "leaf_type",
             "leaf_cycle",
             "denotation"

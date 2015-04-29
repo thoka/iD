@@ -1,5 +1,8 @@
 {
     "fields": [
+	"access_clubs",
+	"species",
+	"genus",
         "leaf_type",
         "leaf_cycle",
         "denotation"

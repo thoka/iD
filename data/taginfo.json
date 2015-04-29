@@ -1160,6 +1160,10 @@
             "value": "common"
         },
         {
+            "key": "garden:type",
+            "value": "community"
+        },
+        {
             "key": "leisure",
             "value": "dog_park"
         },

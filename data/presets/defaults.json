@@ -1,13 +1,14 @@
 {
     "area": [
+        "transfor-direct",
+        "transfor-indirect",
         "category-landuse",
         "category-building",
+        "category-pois",
+        "category-shopping",
+        "transfortest",
+        "leisure/communitygarden",
         "category-water-area",
-        "leisure/park",
-        "amenity/hospital",
-        "amenity/place_of_worship",
-        "amenity/cafe",
-        "amenity/restaurant",
         "area"
     ],
     "line": [

@@ -609,6 +609,10 @@
                     }
                 }
             },
+            "access_clubs": {
+                "label": "Access",
+                "placeholder": "yes"
+            },
             "access_simple": {
                 "label": "Access",
                 "placeholder": "yes"
@@ -949,6 +953,10 @@
             },
             "generator/type": {
                 "label": "Type"
+            },
+            "genus": {
+                "label": "Genus: low level taxonomy rank",
+                "placeholder": "main key latin"
             },
             "golf_hole": {
                 "label": "Reference",
@@ -1390,6 +1398,10 @@
             },
             "source": {
                 "label": "Source"
+            },
+            "species": {
+                "label": "Species: scientific name",
+                "placeholder": "main key latin"
             },
             "sport": {
                 "label": "Sport"
@@ -2690,6 +2702,10 @@
             "leisure/common": {
                 "name": "Common",
                 "terms": "open space"
+            },
+            "leisure/communitygarden": {
+                "name": "Community Garden",
+                "terms": ""
             },
             "leisure/dog_park": {
                 "name": "Dog Park",
