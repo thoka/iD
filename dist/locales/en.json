@@ -562,7 +562,7 @@
                 "name": "Route"
             },
             "category-shopping": {
-                "name": "shopping/dinner"
+                "name": "Shopping / Dinner"
             },
             "category-water-area": {
                 "name": "Water"
@@ -789,6 +789,31 @@
             },
             "construction": {
                 "label": "Type"
+            },
+            "contact": {
+                "label": "Contact data",
+                "placeholder": "Unknown",
+                "types": {
+                    "contact:website": "Website",
+                    "contact:phone": "Telephone Nr.",
+                    "contact:fax": "Fax Nr.",
+                    "contact:email": "Email Address",
+                    "contact:name": "Contact Person Name"
+                },
+                "options": {
+                    "+49 ...": {
+                        "title": "+49 1234 56789-0",
+                        "description": "phone/fax nrs. with int. prefix, no local (0)!"
+                    },
+                    "http://": {
+                        "title": "http://",
+                        "description": "Start Web addresses with http://"
+                    },
+                    "https://": {
+                        "title": "http://",
+                        "description": "Start Secure Web addresses with https://"
+                    }
+                }
             },
             "country": {
                 "label": "Country"
@@ -1374,6 +1399,9 @@
             },
             "sport_racing": {
                 "label": "Sport"
+            },
+            "start_date": {
+                "label": "Start Date"
             },
             "structure": {
                 "label": "Structure",

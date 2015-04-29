@@ -330,6 +330,46 @@
         "type": "combo",
         "label": "Type"
     },
+    "contact": {
+        "keys": [
+            "contact:website",
+            "contact:fax",
+            "contact:phone",
+            "contact:email",
+            "contact:name"
+        ],
+        "reference": {
+            "key": "contact"
+        },
+        "type": "access",
+        "label": "Contact data",
+        "icon": "telephone",
+        "universal": true,
+        "placeholder": "Unknown",
+        "strings": {
+            "types": {
+                "contact:website": "Website",
+                "contact:phone": "Telephone Nr.",
+                "contact:fax": "Fax Nr.",
+                "contact:email": "Email Address",
+                "contact:name": "Contact Person Name"
+            },
+            "options": {
+                "+49 ...": {
+                    "title": "+49 1234 56789-0",
+                    "description": "phone/fax nrs. with int. prefix, no local (0)!"
+                },
+                "http://": {
+                    "title": "http://",
+                    "description": "Start Web addresses with http://"
+                },
+                "https://": {
+                    "title": "http://",
+                    "description": "Start Secure Web addresses with https://"
+                }
+            }
+        }
+    },
     "country": {
         "key": "country",
         "type": "combo",
@@ -444,6 +484,7 @@
     "fee": {
         "key": "fee",
         "type": "check",
+        "universal": true,
         "label": "Fee"
     },
     "fire_hydrant/type": {
@@ -901,7 +942,6 @@
         "key": "phone",
         "type": "tel",
         "icon": "telephone",
-        "universal": true,
         "label": "Phone",
         "placeholder": "+31 42 123 4567"
     },
@@ -1260,6 +1300,12 @@
             "running"
         ]
     },
+    "start_date": {
+        "key": "start_date",
+        "type": "text",
+        "universal": true,
+        "label": "Start Date"
+    },
     "structure": {
         "type": "radio",
         "keys": [
@@ -1433,7 +1479,6 @@
         "type": "url",
         "icon": "website",
         "placeholder": "http://example.com/",
-        "universal": true,
         "label": "Website"
     },
     "wetland": {

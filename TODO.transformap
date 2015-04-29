@@ -54,7 +54,7 @@ in defaults.json are defaults for each datatype (point,line,area)
                 oder ein key mit unterschiedlichen values
             - combo    # normal dropdown for one key/many values
             - access   # special : many dropdowns with same values on different keys
-            - address  # #special
+            - address  # #special - works ONLY for addresses
             - typeCombo # LINK-FORWARDER hidden as combo-box for generic keys -> when chosen, jumps to another preset! (sometimes??)
             - number   # klar
             - "tel",
