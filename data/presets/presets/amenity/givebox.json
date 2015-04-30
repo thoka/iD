@@ -1,0 +1,10 @@
+{
+    "geometry": [
+        "point",
+        "vertex"
+    ],
+    "tags": {
+        "amenity": "givebox"
+    },
+    "name": "Clock"
+}
