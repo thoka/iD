@@ -668,6 +668,11 @@
             }
         }
     },
+    "identity_combotype": {
+        "key": "identity",
+        "type": "typeCombo",
+        "label": "Self-description of a Community"
+    },
     "incline": {
         "key": "incline",
         "type": "combo",
@@ -706,6 +711,11 @@
                 "buying_and_selling": "buy & sell: Here your can buy and sell things."
             }
         }
+    },
+    "interaction_combotype": {
+        "key": "interaction",
+        "type": "typeCombo",
+        "label": "Mode of Interaction"
     },
     "internet_access": {
         "key": "internet_access",
@@ -1055,6 +1065,11 @@
                 "spirituality": "Spirituality: Here you find spaces, places and groups that pursue a contemplative/spiritual connection."
             }
         }
+    },
+    "provides_combotype": {
+        "key": "provides",
+        "type": "typeCombo",
+        "label": "Fulfils Needs"
     },
     "railway": {
         "key": "railway",

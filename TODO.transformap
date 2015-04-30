@@ -7,7 +7,16 @@ Default Mapdata display only: -OK
   others
 
 
-Implement Oauth handling
+Implement Oauth handling ~OK it displays popup window which asks osm.org for oauth token
+
+beginners mode mit gruen leuchtenden knoepfen, wo er der reihenfolge nach drücken muss
+        1. locate me
+        2. set point
+        3. click here to set a name
+        4. click here to set needs, identity, interaction
+
+id version string auf id-transformap
+
 
 Presets:
   a guided "Tour"
@@ -56,6 +65,18 @@ in defaults.json are defaults for each datatype (point,line,area)
             - access   # special : many dropdowns with same values on different keys
             - address  # #special - works ONLY for addresses
             - typeCombo # LINK-FORWARDER hidden as combo-box for generic keys -> when chosen, jumps to another preset! (sometimes??)
+                  hast no tags in field self, takes it from data/presets/presets/$KEY/*.json
+                    but each $VALUE.json can include fields, which can be typeCombos ... that can get ugly...
+                      presets/tm_chain_provides.json
+                        at first, "name"
+                        includes fields/provides_combotype.json
+                        there must be a folder data/presets/presets/provides/[123-n].json
+                          in each only the second question identity_combotype.json (and maybe the first?)
+                          when user chooses identity, iD should switch to data/presets/presets/identity/[123-n].json
+                            in e.g. commons.json all 3 combotypes, 
+                            leads to presets/interaction/[123-n].json
+                              there should be the "final" presets...
+
             - number   # klar
             - "tel",
             - localized #used for name tags, offers "translate"

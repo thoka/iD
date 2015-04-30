@@ -20,6 +20,7 @@
         "line"
     ],
     "point": [
+        "tm_chain_provides",
         "transfor-direct",
         "transfor-indirect",
         "category-pois",

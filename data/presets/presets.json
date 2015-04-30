@@ -4656,6 +4656,70 @@
         },
         "name": "Wayside Shrine"
     },
+    "identity/commons": {
+        "fields": [
+            "name",
+            "provides_combotype",
+            "identity_combotype",
+            "interaction_combotype"
+        ],
+        "geometry": [
+            "point",
+            "vertex",
+            "area"
+        ],
+        "tags": {},
+        "name": "Identity: Commons"
+    },
+    "identity/global_ecovillage_network": {
+        "fields": [
+            "name",
+            "provides_combotype",
+            "identity_combotype",
+            "interaction_combotype"
+        ],
+        "geometry": [
+            "point",
+            "vertex",
+            "area"
+        ],
+        "tags": {},
+        "name": "identity: Global Ecovillage Network"
+    },
+    "interaction/bartering": {
+        "fields": [
+            "name",
+            "provides_combotype",
+            "identity_combotype",
+            "interaction_combotype",
+            "address",
+            "contact"
+        ],
+        "geometry": [
+            "point",
+            "vertex",
+            "area"
+        ],
+        "tags": {},
+        "name": "Interaction: Bartering"
+    },
+    "interaction/lending": {
+        "fields": [
+            "name",
+            "provides_combotype",
+            "identity_combotype",
+            "interaction_combotype",
+            "address",
+            "contact"
+        ],
+        "geometry": [
+            "point",
+            "vertex",
+            "area"
+        ],
+        "tags": {},
+        "name": "Interaction: Lending"
+    },
     "junction": {
         "geometry": [
             "vertex",
@@ -6634,6 +6698,34 @@
             "power": "transformer"
         },
         "name": "Transformer"
+    },
+    "provides/food+drink": {
+        "fields": [
+            "name",
+            "provides_combotype",
+            "identity_combotype"
+        ],
+        "geometry": [
+            "point",
+            "vertex",
+            "area"
+        ],
+        "tags": {},
+        "name": "provides: food & drink"
+    },
+    "provides/water": {
+        "fields": [
+            "name",
+            "provides_combotype",
+            "identity_combotype"
+        ],
+        "geometry": [
+            "point",
+            "vertex",
+            "area"
+        ],
+        "tags": {},
+        "name": "provides: water"
     },
     "public_transport/platform": {
         "fields": [
@@ -8955,6 +9047,19 @@
             "shop": "wine"
         },
         "name": "Wine Shop"
+    },
+    "tm_chain_provides": {
+        "fields": [
+            "name",
+            "provides_combotype"
+        ],
+        "geometry": [
+            "point",
+            "vertex",
+            "area"
+        ],
+        "tags": {},
+        "name": "Fulfils Needs:"
     },
     "tourism": {
         "fields": [

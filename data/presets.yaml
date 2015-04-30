@@ -348,6 +348,8 @@ en:
           economy_for_the_common_good: "Economy for the Common Good: Local chapters of the economy for the common good and corporate bodies that have created a certified balance of the economy for the common good."
           collaborative_economy: "Collaborative Economy: The collaborative economy consists of initiatives based on horizontal networks and participation of a community."
           global_ecovillage_network: "Global Ecovillage Network: Initiatives that are part of the Global Ecovillage Network"
+      identity_combotype:
+        label: Self-description of a Community
       incline:
         label: Incline
       incline_steps:
@@ -369,6 +371,8 @@ en:
           cousing: "co-use: Here you can use (some)things with others."
           diy_and_dit: "Do It Yourself & Together: Here you can produce or repair, upcycle or downcycle something by yourself or together with others."
           buying_and_selling: "buy & sell: Here your can buy and sell things."
+      interaction_combotype:
+        label: Mode of Interaction
       internet_access:
         label: Internet Access
         options:
@@ -558,6 +562,8 @@ en:
           community: "Community: A diverse group of people that offers support and empowerment by coming together."
           participation: "Participation: Here is an opportunity to initiate activities, participate or deliberate on public issues."
           spirituality: "Spirituality: Here you find spaces, places and groups that pursue a contemplative/spiritual connection."
+      provides_combotype:
+        label: Fulfils Needs
       railway:
         label: Type
       recycling/cans:
@@ -1562,6 +1568,18 @@ en:
       historic/wayside_shrine:
         name: Wayside Shrine
         terms: "<translate with synonyms or related terms for 'Wayside Shrine', separated by commas>"
+      identity/commons:
+        name: "Identity: Commons"
+        terms: "<translate with synonyms or related terms for 'Identity: Commons', separated by commas>"
+      identity/global_ecovillage_network:
+        name: "identity: Global Ecovillage Network"
+        terms: "<translate with synonyms or related terms for 'identity: Global Ecovillage Network', separated by commas>"
+      interaction/bartering:
+        name: "Interaction: Bartering"
+        terms: "<translate with synonyms or related terms for 'Interaction: Bartering', separated by commas>"
+      interaction/lending:
+        name: "Interaction: Lending"
+        terms: "<translate with synonyms or related terms for 'Interaction: Lending', separated by commas>"
       junction:
         name: Junction
         terms: "<translate with synonyms or related terms for 'Junction', separated by commas>"
@@ -1964,6 +1982,12 @@ en:
       power/transformer:
         name: Transformer
         terms: "<translate with synonyms or related terms for 'Transformer', separated by commas>"
+      provides/food+drink:
+        name: "provides: food & drink"
+        terms: "<translate with synonyms or related terms for 'provides: food & drink', separated by commas>"
+      provides/water:
+        name: "provides: water"
+        terms: "<translate with synonyms or related terms for 'provides: water', separated by commas>"
       public_transport/platform:
         name: Platform
         terms: "<translate with synonyms or related terms for 'Platform', separated by commas>"
@@ -2348,6 +2372,9 @@ en:
       shop/wine:
         name: Wine Shop
         terms: "<translate with synonyms or related terms for 'Wine Shop', separated by commas>"
+      tm_chain_provides:
+        name: "Fulfils Needs:"
+        terms: "<translate with synonyms or related terms for 'Fulfils Needs:', separated by commas>"
       tourism:
         name: Tourism
         terms: "<translate with synonyms or related terms for 'Tourism', separated by commas>"
