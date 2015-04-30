@@ -18,7 +18,7 @@ Presets:
     then all others
 
 fuckfuckfuck no multiselect-box!
-  atm, choose normal radio-box, fix later
+  atm, choose normal combo-box, fix later
 
 in defaults.json are defaults for each datatype (point,line,area)
   → change to our will :-)
@@ -75,13 +75,13 @@ identity
 interaction
 
 extra fields:
-  contact data
-  smoking
-  wheelchair
+  contact data -OK
+  smoking -OK
+  wheelchair -OK
   start_date -OK
-  fee
+  fee -OK
   access (members/public)
-  internet access
+  internet access -OK
 
   organic -OK
   regional -OK
@@ -90,7 +90,7 @@ extra fields:
   POI-Typen... (amenity,shop,landuse,club,...)
 
   1st "Screen": 
-    • TransforMap Taxonomey
+    • TransforMap Taxonomy
       → guided Tour
     • Classic OSM Object
       → conventional things
