@@ -1,0 +1,16 @@
+{
+    "icon": "chemist",
+    "fields": [
+        "operator",
+        "address",
+        "building_area"
+    ],
+    "geometry": [
+        "point",
+        "area"
+    ],
+    "tags": {
+        "amenity": "fablab"
+    },
+    "name": "Fab Lab"
+}
