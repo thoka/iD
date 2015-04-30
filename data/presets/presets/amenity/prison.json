@@ -1,0 +1,25 @@
+{
+    "icon": "commercial",
+    "fields": [
+        "operator",
+        "address",
+        "building_area"
+    ],
+    "geometry": [
+        "point",
+        "area"
+    ],
+    "terms": [
+        "cop",
+        "detective",
+        "fed",
+        "law",
+        "enforcement",
+        "officer",
+        "jail"
+    ],
+    "tags": {
+        "amenity": "prison"
+    },
+    "name": "Prison"
+}
