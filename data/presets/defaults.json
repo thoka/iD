@@ -20,12 +20,23 @@
         "line"
     ],
     "point": [
-        "tm_chain_provides",
-        "transfor-direct",
+        "category-provides_food+drink",
+        "category-provides_water",
+        "category-provides_land",
+        "category-provides_mobility",
+        "category-provides_health",
+        "category-provides_culture",
+        "category-provides_safety",
+        "category-provides_housing",
+        "category-provides_spaces",
+        "category-provides_objects_of_utility",
+        "category-provides_clothes",
+        "category-provides_learning_opportunities",
+        "category-provides_energy",
+        "category-provides_community",
+        "category-provides_participation",
+        "category-provides_spirituality",
         "transfor-indirect",
-        "category-pois",
-        "category-shopping",
-        "transfortest",
         "point"
     ],
     "vertex": [

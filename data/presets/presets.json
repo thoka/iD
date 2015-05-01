@@ -915,6 +915,22 @@
         },
         "name": "Embassy"
     },
+    "amenity/fablab": {
+        "icon": "chemist",
+        "fields": [
+            "operator",
+            "address",
+            "building_area"
+        ],
+        "geometry": [
+            "point",
+            "area"
+        ],
+        "tags": {
+            "amenity": "fablab"
+        },
+        "name": "Fab Lab"
+    },
     "amenity/fast_food": {
         "icon": "fast-food",
         "fields": [
@@ -992,6 +1008,16 @@
             "amenity": "fuel"
         },
         "name": "Gas Station"
+    },
+    "amenity/givebox": {
+        "geometry": [
+            "point",
+            "vertex"
+        ],
+        "tags": {
+            "amenity": "givebox"
+        },
+        "name": "Givebox"
     },
     "amenity/grave_yard": {
         "icon": "cemetery",
@@ -1410,6 +1436,31 @@
             "amenity": "post_office"
         },
         "name": "Post Office"
+    },
+    "amenity/prison": {
+        "icon": "commercial",
+        "fields": [
+            "operator",
+            "address",
+            "building_area"
+        ],
+        "geometry": [
+            "point",
+            "area"
+        ],
+        "terms": [
+            "cop",
+            "detective",
+            "fed",
+            "law",
+            "enforcement",
+            "officer",
+            "jail"
+        ],
+        "tags": {
+            "amenity": "prison"
+        },
+        "name": "Prison"
     },
     "amenity/pub": {
         "icon": "beer",
@@ -1890,6 +1941,25 @@
             "amenity": "veterinary"
         },
         "name": "Veterinary"
+    },
+    "amenity/volkskuche": {
+        "fields": [
+            "operator",
+            "address",
+            "opening_hours"
+        ],
+        "geometry": [
+            "point",
+            "area"
+        ],
+        "terms": [
+            "Volkskuche"
+        ],
+        "tags": {
+            "amenity": "social_facility",
+            "social_facility": "food_bank"
+        },
+        "name": "Volkskuche"
     },
     "amenity/waste_basket": {
         "icon": "waste-basket",
@@ -4762,6 +4832,19 @@
         "terms": [],
         "name": "Basin"
     },
+    "landuse/brownfield": {
+        "fields": [
+            "operator"
+        ],
+        "geometry": [
+            "area"
+        ],
+        "tags": {
+            "landuse": "brownfield"
+        },
+        "terms": [],
+        "name": "Brownfield"
+    },
     "landuse/cemetery": {
         "icon": "cemetery",
         "fields": [
@@ -4896,6 +4979,19 @@
         },
         "terms": [],
         "name": "Grass"
+    },
+    "landuse/greenfield": {
+        "fields": [
+            "operator"
+        ],
+        "geometry": [
+            "area"
+        ],
+        "tags": {
+            "landuse": "greenfield"
+        },
+        "terms": [],
+        "name": "Greenfield"
     },
     "landuse/industrial": {
         "icon": "industrial",
@@ -9429,6 +9525,7 @@
         "name": "TransforMap: POI fulfilling direct needs"
     },
     "transfor-indirect": {
+        "icon": "flagpole",
         "fields": [
             "topic",
             "identity",

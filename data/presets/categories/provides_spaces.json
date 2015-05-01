@@ -1,0 +1,8 @@
+{
+    "geometry": "point",
+    "name": "Spaces",
+    "icon": "circle-stroked",
+    "members": [
+        "shop/vacant"
+    ]
+}

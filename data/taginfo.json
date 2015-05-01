@@ -218,6 +218,10 @@
         },
         {
             "key": "amenity",
+            "value": "fablab"
+        },
+        {
+            "key": "amenity",
             "value": "fast_food"
         },
         {
@@ -231,6 +235,10 @@
         {
             "key": "amenity",
             "value": "fuel"
+        },
+        {
+            "key": "amenity",
+            "value": "givebox"
         },
         {
             "key": "amenity",
@@ -303,6 +311,10 @@
         {
             "key": "amenity",
             "value": "post_office"
+        },
+        {
+            "key": "amenity",
+            "value": "prison"
         },
         {
             "key": "amenity",
@@ -391,6 +403,10 @@
         {
             "key": "amenity",
             "value": "veterinary"
+        },
+        {
+            "key": "social_facility",
+            "value": "food_bank"
         },
         {
             "key": "amenity",
@@ -1078,6 +1094,10 @@
         },
         {
             "key": "landuse",
+            "value": "brownfield"
+        },
+        {
+            "key": "landuse",
             "value": "cemetery"
         },
         {
@@ -1115,6 +1135,10 @@
         {
             "key": "landuse",
             "value": "grass"
+        },
+        {
+            "key": "landuse",
+            "value": "greenfield"
         },
         {
             "key": "landuse",

@@ -1,4 +1,5 @@
 {
+    "icon": "flagpole",
     "fields": [
         "topic",
         "identity",
@@ -12,5 +13,5 @@
     "tags": {
         "topic": "*"
     },
-    "name": "TransforMap: Organisation caring about needs"
+    "name": "Organisation caring about needs"
 }

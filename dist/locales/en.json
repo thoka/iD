@@ -549,6 +549,54 @@
             "category-pois": {
                 "name": "POIs (amenities)"
             },
+            "category-provides_clothes": {
+                "name": "Clothes"
+            },
+            "category-provides_community": {
+                "name": "Community"
+            },
+            "category-provides_culture": {
+                "name": "Culture"
+            },
+            "category-provides_energy": {
+                "name": "Energy"
+            },
+            "category-provides_food+drink": {
+                "name": "Food + Drink"
+            },
+            "category-provides_health": {
+                "name": "Health"
+            },
+            "category-provides_housing": {
+                "name": "Housing"
+            },
+            "category-provides_land": {
+                "name": "Land"
+            },
+            "category-provides_learning_opportunities": {
+                "name": "Knowledge & Skills"
+            },
+            "category-provides_mobility": {
+                "name": "Mobility"
+            },
+            "category-provides_objects_of_utility": {
+                "name": "Objects of Utility"
+            },
+            "category-provides_participation": {
+                "name": "Participation"
+            },
+            "category-provides_safety": {
+                "name": "Safety"
+            },
+            "category-provides_spaces": {
+                "name": "Spaces"
+            },
+            "category-provides_spirituality": {
+                "name": "Spirituality"
+            },
+            "category-provides_water": {
+                "name": "Water"
+            },
             "category-rail": {
                 "name": "Rail"
             },
@@ -1760,6 +1808,10 @@
                 "name": "Embassy",
                 "terms": ""
             },
+            "amenity/fablab": {
+                "name": "Fab Lab",
+                "terms": ""
+            },
             "amenity/fast_food": {
                 "name": "Fast Food",
                 "terms": "restaurant"
@@ -1775,6 +1827,10 @@
             "amenity/fuel": {
                 "name": "Gas Station",
                 "terms": "petrol,fuel,propane,diesel,lng,cng,biodiesel"
+            },
+            "amenity/givebox": {
+                "name": "Givebox",
+                "terms": ""
             },
             "amenity/grave_yard": {
                 "name": "Graveyard",
@@ -1847,6 +1903,10 @@
             "amenity/post_office": {
                 "name": "Post Office",
                 "terms": "letter,mail"
+            },
+            "amenity/prison": {
+                "name": "Prison",
+                "terms": "cop,detective,fed,law,enforcement,officer,jail"
             },
             "amenity/pub": {
                 "name": "Pub",
@@ -1935,6 +1995,10 @@
             "amenity/veterinary": {
                 "name": "Veterinary",
                 "terms": "pet clinic,veterinarian,animal hospital,pet doctor"
+            },
+            "amenity/volkskuche": {
+                "name": "Volkskuche",
+                "terms": "Volkskuche"
             },
             "amenity/waste_basket": {
                 "name": "Waste Basket",
@@ -2644,6 +2708,10 @@
                 "name": "Basin",
                 "terms": ""
             },
+            "landuse/brownfield": {
+                "name": "Brownfield",
+                "terms": ""
+            },
             "landuse/cemetery": {
                 "name": "Cemetery",
                 "terms": ""
@@ -2682,6 +2750,10 @@
             },
             "landuse/grass": {
                 "name": "Grass",
+                "terms": ""
+            },
+            "landuse/greenfield": {
+                "name": "Greenfield",
                 "terms": ""
             },
             "landuse/industrial": {

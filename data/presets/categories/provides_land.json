@@ -1,0 +1,9 @@
+{
+    "geometry": "point",
+    "name": "Land",
+    "icon": "land-use",
+    "members": [
+        "landuse/greenfield",
+        "landuse/brownfield"
+    ]
+}

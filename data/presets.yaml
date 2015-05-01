@@ -11,6 +11,38 @@ en:
         name: Path
       category-pois:
         name: POIs (amenities)
+      category-provides_clothes:
+        name: Clothes
+      category-provides_community:
+        name: Community
+      category-provides_culture:
+        name: Culture
+      category-provides_energy:
+        name: Energy
+      category-provides_food+drink:
+        name: Food + Drink
+      category-provides_health:
+        name: Health
+      category-provides_housing:
+        name: Housing
+      category-provides_land:
+        name: Land
+      category-provides_learning_opportunities:
+        name: "Knowledge & Skills"
+      category-provides_mobility:
+        name: Mobility
+      category-provides_objects_of_utility:
+        name: Objects of Utility
+      category-provides_participation:
+        name: Participation
+      category-provides_safety:
+        name: Safety
+      category-provides_spaces:
+        name: Spaces
+      category-provides_spirituality:
+        name: Spirituality
+      category-provides_water:
+        name: Water
       category-rail:
         name: Rail
       category-restriction:
@@ -929,6 +961,9 @@ en:
       amenity/embassy:
         name: Embassy
         terms: "<translate with synonyms or related terms for 'Embassy', separated by commas>"
+      amenity/fablab:
+        name: Fab Lab
+        terms: "<translate with synonyms or related terms for 'Fab Lab', separated by commas>"
       amenity/fast_food:
         name: Fast Food
         terms: "<translate with synonyms or related terms for 'Fast Food', separated by commas>"
@@ -941,6 +976,9 @@ en:
       amenity/fuel:
         name: Gas Station
         terms: "<translate with synonyms or related terms for 'Gas Station', separated by commas>"
+      amenity/givebox:
+        name: Givebox
+        terms: "<translate with synonyms or related terms for 'Givebox', separated by commas>"
       amenity/grave_yard:
         name: Graveyard
         terms: "<translate with synonyms or related terms for 'Graveyard', separated by commas>"
@@ -995,6 +1033,9 @@ en:
       amenity/post_office:
         name: Post Office
         terms: "<translate with synonyms or related terms for 'Post Office', separated by commas>"
+      amenity/prison:
+        name: Prison
+        terms: "<translate with synonyms or related terms for 'Prison', separated by commas>"
       amenity/pub:
         name: Pub
         terms: "<translate with synonyms or related terms for 'Pub', separated by commas>"
@@ -1061,6 +1102,9 @@ en:
       amenity/veterinary:
         name: Veterinary
         terms: "<translate with synonyms or related terms for 'Veterinary', separated by commas>"
+      amenity/volkskuche:
+        name: Volkskuche
+        terms: "<translate with synonyms or related terms for 'Volkskuche', separated by commas>"
       amenity/waste_basket:
         name: Waste Basket
         terms: "<translate with synonyms or related terms for 'Waste Basket', separated by commas>"
@@ -1592,6 +1636,9 @@ en:
       landuse/basin:
         name: Basin
         terms: "<translate with synonyms or related terms for 'Basin', separated by commas>"
+      landuse/brownfield:
+        name: Brownfield
+        terms: "<translate with synonyms or related terms for 'Brownfield', separated by commas>"
       landuse/cemetery:
         name: Cemetery
         terms: "<translate with synonyms or related terms for 'Cemetery', separated by commas>"
@@ -1622,6 +1669,9 @@ en:
       landuse/grass:
         name: Grass
         terms: "<translate with synonyms or related terms for 'Grass', separated by commas>"
+      landuse/greenfield:
+        name: Greenfield
+        terms: "<translate with synonyms or related terms for 'Greenfield', separated by commas>"
       landuse/industrial:
         name: Industrial Area
         terms: "<translate with synonyms or related terms for 'Industrial Area', separated by commas>"
