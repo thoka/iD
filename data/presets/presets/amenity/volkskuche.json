@@ -1,0 +1,18 @@
+{
+    "fields": [
+        "operator",
+        "address",
+        "opening_hours"
+    ],
+    "geometry": [
+        "point",
+        "area"
+    ],
+    "terms": [ "Volkskuche"
+    ],
+    "tags": {
+        "amenity": "social_facility",
+        "social_facility": "food_bank"
+    },
+    "name": "Volkskuche"
+}
