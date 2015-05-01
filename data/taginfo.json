@@ -130,6 +130,10 @@
         },
         {
             "key": "amenity",
+            "value": "biergarten"
+        },
+        {
+            "key": "amenity",
             "value": "boat_rental"
         },
         {
@@ -605,6 +609,9 @@
         {
             "key": "building",
             "value": "warehouse"
+        },
+        {
+            "key": "club"
         },
         {
             "key": "craft"
@@ -1153,6 +1160,10 @@
             "value": "common"
         },
         {
+            "key": "garden:type",
+            "value": "community"
+        },
+        {
             "key": "leisure",
             "value": "dog_park"
         },
@@ -1167,6 +1178,10 @@
         {
             "key": "leisure",
             "value": "golf_course"
+        },
+        {
+            "key": "leisure",
+            "value": "hackerspace"
         },
         {
             "key": "leisure",
@@ -2154,6 +2169,15 @@
         {
             "key": "traffic_calming",
             "value": "table"
+        },
+        {
+            "key": "provides"
+        },
+        {
+            "key": "topic"
+        },
+        {
+            "key": "provides"
         },
         {
             "key": "type",

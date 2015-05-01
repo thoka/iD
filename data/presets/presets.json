@@ -524,6 +524,31 @@
         },
         "name": "Bicycle Repair Station"
     },
+    "amenity/biergarten": {
+        "icon": "pub",
+        "fields": [
+            "cuisine",
+            "operator",
+            "address",
+            "building_area",
+            "opening_hours",
+            "takeaway",
+            "delivery",
+            "drive_through",
+            "smoking"
+        ],
+        "geometry": [
+            "point",
+            "area"
+        ],
+        "tags": {
+            "amenity": "biergarten"
+        },
+        "terms": [
+            "restaurant"
+        ],
+        "name": "Biergarten"
+    },
     "amenity/boat_rental": {
         "fields": [
             "operator"
@@ -2639,6 +2664,26 @@
         },
         "name": "Warehouse"
     },
+    "club": {
+        "fields": [
+            "description",
+            "provides",
+            "topic",
+            "identity",
+            "interaction",
+            "club",
+            "address",
+            "fee"
+        ],
+        "geometry": [
+            "point",
+            "area"
+        ],
+        "tags": {
+            "club": "*"
+        },
+        "name": "club"
+    },
     "craft": {
         "icon": "marker-stroked",
         "fields": [
@@ -4611,6 +4656,70 @@
         },
         "name": "Wayside Shrine"
     },
+    "identity/commons": {
+        "fields": [
+            "name",
+            "provides_combotype",
+            "identity_combotype",
+            "interaction_combotype"
+        ],
+        "geometry": [
+            "point",
+            "vertex",
+            "area"
+        ],
+        "tags": {},
+        "name": "Identity: Commons"
+    },
+    "identity/global_ecovillage_network": {
+        "fields": [
+            "name",
+            "provides_combotype",
+            "identity_combotype",
+            "interaction_combotype"
+        ],
+        "geometry": [
+            "point",
+            "vertex",
+            "area"
+        ],
+        "tags": {},
+        "name": "identity: Global Ecovillage Network"
+    },
+    "interaction/bartering": {
+        "fields": [
+            "name",
+            "provides_combotype",
+            "identity_combotype",
+            "interaction_combotype",
+            "address",
+            "contact"
+        ],
+        "geometry": [
+            "point",
+            "vertex",
+            "area"
+        ],
+        "tags": {},
+        "name": "Interaction: Bartering"
+    },
+    "interaction/lending": {
+        "fields": [
+            "name",
+            "provides_combotype",
+            "identity_combotype",
+            "interaction_combotype",
+            "address",
+            "contact"
+        ],
+        "geometry": [
+            "point",
+            "vertex",
+            "area"
+        ],
+        "tags": {},
+        "name": "Interaction: Lending"
+    },
     "junction": {
         "geometry": [
             "vertex",
@@ -4913,6 +5022,27 @@
         },
         "name": "Common"
     },
+    "leisure/communitygarden": {
+        "icon": "garden",
+        "fields": [
+            "provides",
+            "identity",
+            "interaction",
+            "access_clubs",
+            "operator",
+            "address"
+        ],
+        "geometry": [
+            "point",
+            "vertex",
+            "area"
+        ],
+        "tags": {
+            "leisure": "garden",
+            "garden:type": "community"
+        },
+        "name": "Community Garden"
+    },
     "leisure/dog_park": {
         "icon": "dog-park",
         "geometry": [
@@ -4969,6 +5099,25 @@
             "leisure": "golf_course"
         },
         "name": "Golf Course"
+    },
+    "leisure/hackerspace": {
+        "icon": "pitch",
+        "fields": [
+            "address",
+            "building_area",
+            "opening_hours"
+        ],
+        "geometry": [
+            "point",
+            "area"
+        ],
+        "tags": {
+            "leisure": "hackerspace"
+        },
+        "terms": [
+            "hacklab"
+        ],
+        "name": "Hackerspace"
     },
     "leisure/ice_rink": {
         "icon": "pitch",
@@ -5759,6 +5908,9 @@
     },
     "natural/tree": {
         "fields": [
+            "access_clubs",
+            "species",
+            "genus",
             "leaf_type",
             "leaf_cycle",
             "denotation"
@@ -6546,6 +6698,34 @@
             "power": "transformer"
         },
         "name": "Transformer"
+    },
+    "provides/food+drink": {
+        "fields": [
+            "name",
+            "provides_combotype",
+            "identity_combotype"
+        ],
+        "geometry": [
+            "point",
+            "vertex",
+            "area"
+        ],
+        "tags": {},
+        "name": "provides: food & drink"
+    },
+    "provides/water": {
+        "fields": [
+            "name",
+            "provides_combotype",
+            "identity_combotype"
+        ],
+        "geometry": [
+            "point",
+            "vertex",
+            "area"
+        ],
+        "tags": {},
+        "name": "provides: water"
     },
     "public_transport/platform": {
         "fields": [
@@ -8868,6 +9048,19 @@
         },
         "name": "Wine Shop"
     },
+    "tm_chain_provides": {
+        "fields": [
+            "name",
+            "provides_combotype"
+        ],
+        "geometry": [
+            "point",
+            "vertex",
+            "area"
+        ],
+        "tags": {},
+        "name": "Fulfils Needs:"
+    },
     "tourism": {
         "fields": [
             "tourism"
@@ -9218,6 +9411,56 @@
             "flat top hump"
         ],
         "name": "Raised Pedestrian Crossing"
+    },
+    "transfor-direct": {
+        "fields": [
+            "provides",
+            "identity",
+            "interaction",
+            "address"
+        ],
+        "geometry": [
+            "point",
+            "area"
+        ],
+        "tags": {
+            "provides": "*"
+        },
+        "name": "TransforMap: POI fulfilling direct needs"
+    },
+    "transfor-indirect": {
+        "fields": [
+            "topic",
+            "identity",
+            "interaction",
+            "address"
+        ],
+        "geometry": [
+            "point",
+            "area"
+        ],
+        "tags": {
+            "topic": "*"
+        },
+        "name": "TransforMap: Organisation caring about needs"
+    },
+    "transfortest": {
+        "fields": [
+            "provides",
+            "topic",
+            "identity",
+            "interaction",
+            "contact",
+            "address"
+        ],
+        "geometry": [
+            "point",
+            "area"
+        ],
+        "tags": {
+            "provides": "*"
+        },
+        "name": "TransforMap Object"
     },
     "type/boundary": {
         "geometry": [

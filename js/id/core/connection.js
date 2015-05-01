@@ -241,13 +241,18 @@ iD.Connection = function() {
     };
 
     connection.changesetTags = function(comment, imageryUsed) {
-        var tags = {
-            imagery_used: imageryUsed.join(';').substr(0, 255),
-            created_by: 'iD ' + iD.version
-        };
+        var detected = iD.detect(),
+            tags = {
+                created_by: 'iD ' + iD.version,
+                imagery_used: imageryUsed.join(';').substr(0, 255),
+                host: (window.location.origin + window.location.pathname).substr(0, 255),
+                locale: detected.locale,
+                browser: detected.browser + ' ' + detected.version,
+                platform: detected.platform
+            };
 
         if (comment) {
-            tags.comment = comment;
+            tags.comment = comment.substr(0, 255);
         }
 
         return tags;

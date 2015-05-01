@@ -473,7 +473,7 @@
     },
     "help": {
         "title": "Help",
-        "help": "# Help\n\nThis is an editor for [OpenStreetMap](http://www.openstreetmap.org/), the\nfree and editable map of the world. You can use it to add and update\ndata in your area, making an open-source and open-data map of the world\nbetter for everyone.\n\nEdits that you make on this map will be visible to everyone who uses\nOpenStreetMap. In order to make an edit, you'll need a\n[free OpenStreetMap account](https://www.openstreetmap.org/user/new).\n\nThe [iD editor](http://ideditor.com/) is a collaborative project with [source\ncode available on GitHub](https://github.com/openstreetmap/iD).\n",
+        "help": "# Help\n\nThis is an editor for [OpenStreetMap](http://www.openstreetmap.org/), the\nfree and editable map of the world. You can use it to add and update\ndata in your area, making an open-source and open-data map of the world\nbetter for everyone.\n\nEdits that you make on this map will be visible to everyone who uses\nOpenStreetMap. In order to make an edit, you'll need to\n[log in](https://www.openstreetmap.org/login).\n\nThe [iD editor](http://ideditor.com/) is a collaborative project with [source\ncode available on GitHub](https://github.com/openstreetmap/iD).\n",
         "editing_saving": "# Editing & Saving\n\nThis editor is designed to work primarily online, and you're accessing\nit through a website right now.\n\n### Selecting Features\n\nTo select a map feature, like a road or point of interest, click\non it on the map. This will highlight the selected feature, open a panel with\ndetails about it, and show a menu of things you can do with the feature.\n\nTo select multiple features, hold down the 'Shift' key. Then either click\non the features you want to select, or drag on the map to draw a rectangle.\nThis will draw a box and select all the points within it.\n\n### Saving Edits\n\nWhen you make changes like editing roads, buildings, and places, these are\nstored locally until you save them to the server. Don't worry if you make\na mistake - you can undo changes by clicking the undo button, and redo\nchanges by clicking the redo button.\n\nClick 'Save' to finish a group of edits - for instance, if you've completed\nan area of town and would like to start on a new area. You'll have a chance\nto review what you've done, and the editor supplies helpful suggestions\nand warnings if something doesn't seem right about the changes.\n\nIf everything looks good, you can enter a short comment explaining the change\nyou made, and click 'Save' again to post the changes\nto [OpenStreetMap.org](http://www.openstreetmap.org/), where they are visible\nto all other users and available for others to build and improve upon.\n\nIf you can't finish your edits in one sitting, you can leave the editor\nwindow and come back (on the same browser and computer), and the\neditor application will offer to restore your work.\n",
         "roads": "# Roads\n\nYou can create, fix, and delete roads with this editor. Roads can be all\nkinds: paths, highways, trails, cycleways, and more - any often-crossed\nsegment should be mappable.\n\n### Selecting\n\nClick on a road to select it. An outline should become visible, along\nwith a small tools menu on the map and a sidebar showing more information\nabout the road.\n\n### Modifying\n\nOften you'll see roads that aren't aligned to the imagery behind them\nor to a GPS track. You can adjust these roads so they are in the correct\nplace.\n\nFirst click on the road you want to change. This will highlight it and show\ncontrol points along it that you can drag to better locations. If\nyou want to add new control points for more detail, double-click a part\nof the road without a node, and one will be added.\n\nIf the road connects to another road, but doesn't properly connect on\nthe map, you can drag one of its control points onto the other road in\norder to join them. Having roads connect is important for the map\nand essential for providing driving directions.\n\nYou can also click the 'Move' tool or press the `M` shortcut key to move the entire road at\none time, and then click again to save that movement.\n\n### Deleting\n\nIf a road is entirely incorrect - you can see that it doesn't exist in satellite\nimagery and ideally have confirmed locally that it's not present - you can delete\nit, which removes it from the map. Be cautious when deleting features -\nlike any other edit, the results are seen by everyone and satellite imagery\nis often out of date, so the road could simply be newly built.\n\nYou can delete a road by clicking on it to select it, then clicking the\ntrash can icon or pressing the 'Delete' key.\n\n### Creating\n\nFound somewhere there should be a road but there isn't? Click the 'Line'\nicon in the top-left of the editor or press the shortcut key `2` to start drawing\na line.\n\nClick on the start of the road on the map to start drawing. If the road\nbranches off from an existing road, start by clicking on the place where they connect.\n\nThen click on points along the road so that it follows the right path, according\nto satellite imagery or GPS. If the road you are drawing crosses another road, connect\nit by clicking on the intersection point. When you're done drawing, double-click\nor press 'Return' or 'Enter' on your keyboard.\n",
         "gps": "# GPS\n\nGPS data is the most trusted source of data for OpenStreetMap. This editor\nsupports local traces - `.gpx` files on your local computer. You can collect\nthis kind of GPS trace with a number of smartphone applications as well as\npersonal GPS hardware.\n\nFor information on how to perform a GPS survey, read\n[Surveying with a GPS](http://learnosm.org/en/beginner/using-gps/).\n\nTo use a GPX track for mapping, drag and drop the GPX file onto the map\neditor. If it's recognized, it will be added to the map as a bright purple\nline. Click on the 'Map Data' menu on the right side to enable,\ndisable, or zoom to this new GPX-powered layer.\n\nThe GPX track isn't directly uploaded to OpenStreetMap - the best way to\nuse it is to draw on the map, using it as a guide for the new features that\nyou add, and also to [upload it to OpenStreetMap](http://www.openstreetmap.org/trace/create)\nfor other users to use.\n",
@@ -546,6 +546,9 @@
             "category-path": {
                 "name": "Path"
             },
+            "category-pois": {
+                "name": "POIs (amenities)"
+            },
             "category-rail": {
                 "name": "Rail"
             },
@@ -557,6 +560,9 @@
             },
             "category-route": {
                 "name": "Route"
+            },
+            "category-shopping": {
+                "name": "Shopping / Dinner"
             },
             "category-water-area": {
                 "name": "Water"
@@ -602,6 +608,10 @@
                         "description": "Access permitted only to reach a destination"
                     }
                 }
+            },
+            "access_clubs": {
+                "label": "Access",
+                "placeholder": "yes"
             },
             "access_simple": {
                 "label": "Access",
@@ -739,11 +749,75 @@
                     "anticlockwise": "Counterclockwise"
                 }
             },
+            "club": {
+                "label": "Club",
+                "placeholder": "Yes, Sports, Artist, Chess, ...",
+                "options": {
+                    "yes": "Yes: If not known further",
+                    "sport": "+ sport=*",
+                    "art": "Artist club",
+                    "astronomy": "An amateur astronomy club",
+                    "automobile": "Automobile club",
+                    "bicycle": "Promote and enjoy bicycle usage (for competitions see sport + sport=cycling)",
+                    "charity": "A club devoted to charitable activities: blood/tissues donation, humanitarian,..",
+                    "chess": "Chess club",
+                    "cinema": "Cinema club",
+                    "cooking": "Cooking club",
+                    "culture": "A cultural club that doesn't fit in other categories. Consider to use a specific new value instead of this.",
+                    "doityourself": "Do it yourself club (electronics, clothes,..)",
+                    "elderly": "A club restricted to aged people",
+                    "ethnic": "A club to promote ethnic or inter-ethnic culture.",
+                    "fan": "A fanclub",
+                    "fishing": "(for competitions see sport + sport=fishing)",
+                    "freemasonry": "A Masonic Lodge/temple/hall used by Freemasons.",
+                    "game": "A club devoted to games.",
+                    "board_games": "A club devoted to board games.",
+                    "history": "A club devoted to (local) history and traditions",
+                    "hunting": "(see also sport+sport=shooting)",
+                    "linux": "A Linux User Group (LUG)",
+                    "music": "A club where people sing or play music",
+                    "nature": "A club devoted to nature study: mushrooms, rocks, flowers, birdwatching,and so on. Consider if create specific values for each of these.",
+                    "nudism": "Nudist Club",
+                    "photography": "Photographer club",
+                    "politics": "politic club",
+                    "religion": "+ religion=* + denomination=*",
+                    "scout": "A scout group base",
+                    "smoke": "smoker's club",
+                    "theatre": "theatre club",
+                    "veterans": "A club of war veterans (e.g.: in italy \"Gruppo alpini\" or \"Gruppo partigiani\").",
+                    "youth": "A club restricted to young people"
+                }
+            },
             "collection_times": {
                 "label": "Collection Times"
             },
             "construction": {
                 "label": "Type"
+            },
+            "contact": {
+                "label": "Contact data",
+                "placeholder": "Unknown",
+                "types": {
+                    "contact:website": "Website",
+                    "contact:phone": "Telephone Nr.",
+                    "contact:fax": "Fax Nr.",
+                    "contact:email": "Email Address",
+                    "contact:name": "Contact Person Name"
+                },
+                "options": {
+                    "+49 ...": {
+                        "title": "+49 1234 56789-0",
+                        "description": "phone/fax nrs. with int. prefix, no local (0)!"
+                    },
+                    "http://": {
+                        "title": "http://",
+                        "description": "Start Web addresses with http://"
+                    },
+                    "https://": {
+                        "title": "http://",
+                        "description": "Start Secure Web addresses with https://"
+                    }
+                }
             },
             "country": {
                 "label": "Country"
@@ -799,6 +873,16 @@
             },
             "except": {
                 "label": "Exceptions"
+            },
+            "fair_trade": {
+                "label": "Fair-Trade",
+                "placeholder": "Yes, No, Fair-Trade Only...",
+                "options": {
+                    "yes": "Yes: Good choice of fair-trade products in the whole selection, but not solely",
+                    "no": "No",
+                    "only": "Fair-Trade Only",
+                    "limited": "Limited: only selected products are fair-trade"
+                }
             },
             "fax": {
                 "label": "Fax",
@@ -870,6 +954,10 @@
             "generator/type": {
                 "label": "Type"
             },
+            "genus": {
+                "label": "Genus: low level taxonomy rank",
+                "placeholder": "main key latin"
+            },
             "golf_hole": {
                 "label": "Reference",
                 "placeholder": "Hole number (1-18)"
@@ -894,6 +982,24 @@
             "icao": {
                 "label": "ICAO"
             },
+            "identity": {
+                "label": "Self-Description of a Community",
+                "placeholder": "Commons, Transition Town Initiative, ...",
+                "options": {
+                    "solidarity_economy": "Solidarity Economy: Organisations, projects and enterprises meeting the principles of Solidarity Economy based on the core ideas of shared ownership and people before profit.",
+                    "transition_initiative": "Transition Town Initative: A transition town is a grassroot community project that seeks to build resilience in response to peak oil, climate destruction, and economic instability by creating a local group that uphold the values of the transition network.",
+                    "permaculture": "Permaculture: Initiatives, and projects based on the design principles of permaculture.",
+                    "demonetized_economy": "Demonetized Economy: Places where people live or attempt to live without money. Projects and initiatives that avoid commodity exchange and conventional money.",
+                    "community_based_currencies": "Community Based Currencies: Initiatives that design and manage community based and -supported, local and social currencies, which are not controlled by a national government, and are intended to be traded only in a particular area. ",
+                    "commons": "Commons: \"Commons\"-based communities collectively and democratically produce, steward, develop or manage shared places, projects, resources, assets or knowledge. See also Eight Design Principles for Managing a Commons set forth by Nobel Prize Laureate Elinor Ostrom.",
+                    "economy_for_the_common_good": "Economy for the Common Good: Local chapters of the economy for the common good and corporate bodies that have created a certified balance of the economy for the common good.",
+                    "collaborative_economy": "Collaborative Economy: The collaborative economy consists of initiatives based on horizontal networks and participation of a community.",
+                    "global_ecovillage_network": "Global Ecovillage Network: Initiatives that are part of the Global Ecovillage Network"
+                }
+            },
+            "identity_combotype": {
+                "label": "Self-description of a Community"
+            },
             "incline": {
                 "label": "Incline"
             },
@@ -906,6 +1012,23 @@
             },
             "information": {
                 "label": "Type"
+            },
+            "interaction": {
+                "label": "Mode of Interaction",
+                "placeholder": "bartering, cousing, ...",
+                "options": {
+                    "bartering": "bartering: Here you can exchange something: give & take",
+                    "lending": "lending: Here you can borrow something (contributions towards costs).",
+                    "renting": "renting: Here you can rent something.",
+                    "gifting": "gifting: Here you can give and receive.",
+                    "rebuying_reselling": "rebuy & resell: Here you can get and leave things that are not needed anymore. Second-hand.",
+                    "cousing": "co-use: Here you can use (some)things with others.",
+                    "diy_and_dit": "Do It Yourself & Together: Here you can produce or repair, upcycle or downcycle something by yourself or together with others.",
+                    "buying_and_selling": "buy & sell: Here your can buy and sell things."
+                }
+            },
+            "interaction_combotype": {
+                "label": "Mode of Interaction"
             },
             "internet_access": {
                 "label": "Internet Access",
@@ -1046,6 +1169,16 @@
             "operator": {
                 "label": "Operator"
             },
+            "organic": {
+                "label": "Organic",
+                "placeholder": "Yes, No, Organic Only...",
+                "options": {
+                    "yes": "Yes: Good choice of organic products in the whole selection, but not solely",
+                    "no": "No",
+                    "only": "Organic Only",
+                    "limited": "Limited: only selected products are organic"
+                }
+            },
             "par": {
                 "label": "Par",
                 "placeholder": "3, 4, 5..."
@@ -1116,6 +1249,31 @@
             "power": {
                 "label": "Type"
             },
+            "provides": {
+                "label": "Needs fulfilled by a community",
+                "placeholder": "food+drink , water, land, ...",
+                "options": {
+                    "food+drink": "Food & Drink: Here you can find drinks and something to eat, recently harvested or ready to enjoy.",
+                    "water": "Water: Here you can find drinking water.",
+                    "land": "Land: Here you find land - the land we all need to find shelter and/or to work on.",
+                    "mobility": "Mobility: Here you find possibilities to go from A to B.",
+                    "health": "Health: Here you find what keeps and makes us healthy.",
+                    "culture": "Culture: Here you find cultural events or free space to (self-)organise an event or to perform.",
+                    "safety": "Safety: Here you find places and people that provide a sense of security, support and safety for a short period of time.",
+                    "housing": "Housing: Here you find shelter - for a short time or permanently.",
+                    "spaces": "Free Space: Here you find free spaces to meet, hang out or do whatever you want.",
+                    "objects_of_utility": "Objects of Utility: Here you can get or borrow different tools and other things, that others don't need any longer or only ocassionally use.",
+                    "clothes": "Clothes: Here you can find clothes.",
+                    "learning_opportunities": "Knowledge & Skills: Here you can find things and spaces where knowledge, skills and insights are shared. A space where people learn and research and where you can engage heart, hand and mind.",
+                    "energy": "Energy: Electricity, heating, transportation - all these require energy. On this places energy is provided.",
+                    "community": "Community: A diverse group of people that offers support and empowerment by coming together.",
+                    "participation": "Participation: Here is an opportunity to initiate activities, participate or deliberate on public issues.",
+                    "spirituality": "Spirituality: Here you find spaces, places and groups that pursue a contemplative/spiritual connection."
+                }
+            },
+            "provides_combotype": {
+                "label": "Fulfils Needs"
+            },
             "railway": {
                 "label": "Type"
             },
@@ -1133,6 +1291,16 @@
             },
             "ref": {
                 "label": "Reference"
+            },
+            "regional": {
+                "label": "Regional",
+                "placeholder": "Yes, No, Regional Only...",
+                "options": {
+                    "yes": "Yes: Good choice of regional products in the whole selection, but not solely",
+                    "no": "No",
+                    "only": "Regional Only",
+                    "limited": "Limited: only selected products are regional"
+                }
             },
             "relation": {
                 "label": "Type"
@@ -1240,6 +1408,10 @@
             "source": {
                 "label": "Source"
             },
+            "species": {
+                "label": "Species: scientific name",
+                "placeholder": "main key latin"
+            },
             "sport": {
                 "label": "Sport"
             },
@@ -1248,6 +1420,9 @@
             },
             "sport_racing": {
                 "label": "Sport"
+            },
+            "start_date": {
+                "label": "Start Date"
             },
             "structure": {
                 "label": "Structure",
@@ -1291,6 +1466,28 @@
                     "pitlatrine": "Pit/Latrine",
                     "chemical": "Chemical",
                     "bucket": "Bucket"
+                }
+            },
+            "topic": {
+                "label": "Topic of an Organisation",
+                "placeholder": "food+drink , water, land, ...",
+                "options": {
+                    "food+drink": "Food & Drink: Organisations that care about food/drink.",
+                    "water": "Water: Here you can find organisations who care about water.",
+                    "land": "Land: Here you can find organisations who care about land - the land we all need to find shelter and/or to work on.",
+                    "mobility": "Mobility: Here you find organisations who care about mobility.",
+                    "health": "Health: Here you find organisations that care about keeping and making us healthy.",
+                    "culture": "Culture: Organisations who care about culture.",
+                    "safety": "Safety: Organisations who care about security.",
+                    "housing": "Housing: Organisations who care about housing.",
+                    "spaces": "Free Space: Organisations which are concerned about open spaces.",
+                    "objects_of_utility": "Objects of Utility: Organisations devoted to objects of utility.",
+                    "clothes": "Clothes-related organisations (traders,company HQs,charity organisations with focus on clothes).",
+                    "learning_opportunities": "Knowledge & Skills: Organisations devoted to science and education.",
+                    "energy": "Energy-focused organisations",
+                    "community": "Community-building and empowering organisations.",
+                    "participation": "Participation: Organisations who organise participation in various field.",
+                    "spirituality": "Spirituality: Spritiual organisations"
                 }
             },
             "tourism": {
@@ -1474,6 +1671,10 @@
             "amenity/bicycle_repair_station": {
                 "name": "Bicycle Repair Station",
                 "terms": "bike"
+            },
+            "amenity/biergarten": {
+                "name": "Biergarten",
+                "terms": "restaurant"
             },
             "amenity/boat_rental": {
                 "name": "Boat Rental",
@@ -1955,6 +2156,10 @@
                 "name": "Warehouse",
                 "terms": ""
             },
+            "club": {
+                "name": "club",
+                "terms": ""
+            },
             "craft": {
                 "name": "Craft",
                 "terms": ""
@@ -2407,6 +2612,22 @@
                 "name": "Wayside Shrine",
                 "terms": ""
             },
+            "identity/commons": {
+                "name": "Identity: Commons",
+                "terms": ""
+            },
+            "identity/global_ecovillage_network": {
+                "name": "identity: Global Ecovillage Network",
+                "terms": ""
+            },
+            "interaction/bartering": {
+                "name": "Interaction: Bartering",
+                "terms": ""
+            },
+            "interaction/lending": {
+                "name": "Interaction: Lending",
+                "terms": ""
+            },
             "junction": {
                 "name": "Junction",
                 "terms": ""
@@ -2507,6 +2728,10 @@
                 "name": "Common",
                 "terms": "open space"
             },
+            "leisure/communitygarden": {
+                "name": "Community Garden",
+                "terms": ""
+            },
             "leisure/dog_park": {
                 "name": "Dog Park",
                 "terms": ""
@@ -2522,6 +2747,10 @@
             "leisure/golf_course": {
                 "name": "Golf Course",
                 "terms": "links"
+            },
+            "leisure/hackerspace": {
+                "name": "Hackerspace",
+                "terms": "hacklab"
             },
             "leisure/ice_rink": {
                 "name": "Ice Rink",
@@ -2933,6 +3162,14 @@
             },
             "power/transformer": {
                 "name": "Transformer",
+                "terms": ""
+            },
+            "provides/food+drink": {
+                "name": "provides: food & drink",
+                "terms": ""
+            },
+            "provides/water": {
+                "name": "provides: water",
                 "terms": ""
             },
             "public_transport/platform": {
@@ -3447,6 +3684,10 @@
                 "name": "Wine Shop",
                 "terms": ""
             },
+            "tm_chain_provides": {
+                "name": "Fulfils Needs:",
+                "terms": ""
+            },
             "tourism": {
                 "name": "Tourism",
                 "terms": ""
@@ -3530,6 +3771,18 @@
             "traffic_calming/table": {
                 "name": "Raised Pedestrian Crossing",
                 "terms": "speed table,flat top hump"
+            },
+            "transfor-direct": {
+                "name": "TransforMap: POI fulfilling direct needs",
+                "terms": ""
+            },
+            "transfor-indirect": {
+                "name": "TransforMap: Organisation caring about needs",
+                "terms": ""
+            },
+            "transfortest": {
+                "name": "TransforMap Object",
+                "terms": ""
             },
             "type/boundary": {
                 "name": "Boundary",

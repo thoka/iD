@@ -1,0 +1,16 @@
+{
+    "fields": [
+        "provides",
+        "identity",
+        "interaction",
+        "address"
+    ],
+    "geometry": [
+        "point",
+        "area"
+    ],
+    "tags": {
+        "provides": "*"
+    },
+    "name": "TransforMap: POI fulfilling direct needs"
+}

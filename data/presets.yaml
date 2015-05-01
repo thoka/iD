@@ -9,6 +9,8 @@ en:
         name: Land Use
       category-path:
         name: Path
+      category-pois:
+        name: POIs (amenities)
       category-rail:
         name: Rail
       category-restriction:
@@ -17,6 +19,8 @@ en:
         name: Road
       category-route:
         name: Route
+      category-shopping:
+        name: Shopping / Dinner
       category-water-area:
         name: Water
       category-water-line:
@@ -50,6 +54,9 @@ en:
           destination:
             title: Destination
             description: Access permitted only to reach a destination
+      access_clubs:
+        label: Access
+        placeholder: "yes"
       access_simple:
         label: Access
         placeholder: "yes"
@@ -153,10 +160,66 @@ en:
         options:
           clockwise: Clockwise
           anticlockwise: Counterclockwise
+      club:
+        label: Club
+        placeholder: "Yes, Sports, Artist, Chess, ..."
+        options:
+          "yes": "Yes: If not known further"
+          sport: "+ sport=*"
+          art: Artist club
+          astronomy: An amateur astronomy club
+          automobile: Automobile club
+          bicycle: Promote and enjoy bicycle usage (for competitions see sport + sport=cycling)
+          charity: "A club devoted to charitable activities: blood/tissues donation, humanitarian,.."
+          chess: Chess club
+          cinema: Cinema club
+          cooking: Cooking club
+          culture: "A cultural club that doesn't fit in other categories. Consider to use a specific new value instead of this."
+          doityourself: "Do it yourself club (electronics, clothes,..)"
+          elderly: A club restricted to aged people
+          ethnic: A club to promote ethnic or inter-ethnic culture.
+          fan: A fanclub
+          fishing: (for competitions see sport + sport=fishing)
+          freemasonry: A Masonic Lodge/temple/hall used by Freemasons.
+          game: A club devoted to games.
+          board_games: A club devoted to board games.
+          history: A club devoted to (local) history and traditions
+          hunting: (see also sport+sport=shooting)
+          linux: A Linux User Group (LUG)
+          music: A club where people sing or play music
+          nature: "A club devoted to nature study: mushrooms, rocks, flowers, birdwatching,and so on. Consider if create specific values for each of these."
+          nudism: Nudist Club
+          photography: Photographer club
+          politics: politic club
+          religion: "+ religion=* + denomination=*"
+          scout: A scout group base
+          smoke: "smoker's club"
+          theatre: theatre club
+          veterans: "A club of war veterans (e.g.: in italy \"Gruppo alpini\" or \"Gruppo partigiani\")."
+          youth: A club restricted to young people
       collection_times:
         label: Collection Times
       construction:
         label: Type
+      contact:
+        label: Contact data
+        placeholder: Unknown
+        types:
+          "contact:website": Website
+          "contact:phone": Telephone Nr.
+          "contact:fax": Fax Nr.
+          "contact:email": Email Address
+          "contact:name": Contact Person Name
+        options:
+          +49 ...:
+            title: +49 1234 56789-0
+            description: "phone/fax nrs. with int. prefix, no local (0)!"
+          "http://":
+            title: "http://"
+            description: "Start Web addresses with http://"
+          "https://":
+            title: "http://"
+            description: "Start Secure Web addresses with https://"
       country:
         label: Country
       covered:
@@ -195,6 +258,14 @@ en:
         label: Type
       except:
         label: Exceptions
+      fair_trade:
+        label: Fair-Trade
+        placeholder: "Yes, No, Fair-Trade Only..."
+        options:
+          "yes": "Yes: Good choice of fair-trade products in the whole selection, but not solely"
+          "no": "No"
+          only: Fair-Trade Only
+          limited: "Limited: only selected products are fair-trade"
       fax:
         label: Fax
         placeholder: +31 42 123 4567
@@ -244,6 +315,9 @@ en:
         label: Source
       generator/type:
         label: Type
+      genus:
+        label: "Genus: low level taxonomy rank"
+        placeholder: main key latin
       golf_hole:
         label: Reference
         placeholder: Hole number (1-18)
@@ -261,6 +335,21 @@ en:
         label: IATA
       icao:
         label: ICAO
+      identity:
+        label: Self-Description of a Community
+        placeholder: "Commons, Transition Town Initiative, ..."
+        options:
+          solidarity_economy: "Solidarity Economy: Organisations, projects and enterprises meeting the principles of Solidarity Economy based on the core ideas of shared ownership and people before profit."
+          transition_initiative: "Transition Town Initative: A transition town is a grassroot community project that seeks to build resilience in response to peak oil, climate destruction, and economic instability by creating a local group that uphold the values of the transition network."
+          permaculture: "Permaculture: Initiatives, and projects based on the design principles of permaculture."
+          demonetized_economy: "Demonetized Economy: Places where people live or attempt to live without money. Projects and initiatives that avoid commodity exchange and conventional money."
+          community_based_currencies: "Community Based Currencies: Initiatives that design and manage community based and -supported, local and social currencies, which are not controlled by a national government, and are intended to be traded only in a particular area. "
+          commons: "Commons: \"Commons\"-based communities collectively and democratically produce, steward, develop or manage shared places, projects, resources, assets or knowledge. See also Eight Design Principles for Managing a Commons set forth by Nobel Prize Laureate Elinor Ostrom."
+          economy_for_the_common_good: "Economy for the Common Good: Local chapters of the economy for the common good and corporate bodies that have created a certified balance of the economy for the common good."
+          collaborative_economy: "Collaborative Economy: The collaborative economy consists of initiatives based on horizontal networks and participation of a community."
+          global_ecovillage_network: "Global Ecovillage Network: Initiatives that are part of the Global Ecovillage Network"
+      identity_combotype:
+        label: Self-description of a Community
       incline:
         label: Incline
       incline_steps:
@@ -270,6 +359,20 @@ en:
           down: Down
       information:
         label: Type
+      interaction:
+        label: Mode of Interaction
+        placeholder: "bartering, cousing, ..."
+        options:
+          bartering: "bartering: Here you can exchange something: give & take"
+          lending: "lending: Here you can borrow something (contributions towards costs)."
+          renting: "renting: Here you can rent something."
+          gifting: "gifting: Here you can give and receive."
+          rebuying_reselling: "rebuy & resell: Here you can get and leave things that are not needed anymore. Second-hand."
+          cousing: "co-use: Here you can use (some)things with others."
+          diy_and_dit: "Do It Yourself & Together: Here you can produce or repair, upcycle or downcycle something by yourself or together with others."
+          buying_and_selling: "buy & sell: Here your can buy and sell things."
+      interaction_combotype:
+        label: Mode of Interaction
       internet_access:
         label: Internet Access
         options:
@@ -375,6 +478,14 @@ en:
         label: Hours
       operator:
         label: Operator
+      organic:
+        label: Organic
+        placeholder: "Yes, No, Organic Only..."
+        options:
+          "yes": "Yes: Good choice of organic products in the whole selection, but not solely"
+          "no": "No"
+          only: Organic Only
+          limited: "Limited: only selected products are organic"
       par:
         label: Par
         placeholder: "3, 4, 5..."
@@ -431,6 +542,28 @@ en:
         label: Population
       power:
         label: Type
+      provides:
+        label: Needs fulfilled by a community
+        placeholder: "food+drink , water, land, ..."
+        options:
+          food+drink: "Food & Drink: Here you can find drinks and something to eat, recently harvested or ready to enjoy."
+          water: "Water: Here you can find drinking water."
+          land: "Land: Here you find land - the land we all need to find shelter and/or to work on."
+          mobility: "Mobility: Here you find possibilities to go from A to B."
+          health: "Health: Here you find what keeps and makes us healthy."
+          culture: "Culture: Here you find cultural events or free space to (self-)organise an event or to perform."
+          safety: "Safety: Here you find places and people that provide a sense of security, support and safety for a short period of time."
+          housing: "Housing: Here you find shelter - for a short time or permanently."
+          spaces: "Free Space: Here you find free spaces to meet, hang out or do whatever you want."
+          objects_of_utility: "Objects of Utility: Here you can get or borrow different tools and other things, that others don't need any longer or only ocassionally use."
+          clothes: "Clothes: Here you can find clothes."
+          learning_opportunities: "Knowledge & Skills: Here you can find things and spaces where knowledge, skills and insights are shared. A space where people learn and research and where you can engage heart, hand and mind."
+          energy: "Energy: Electricity, heating, transportation - all these require energy. On this places energy is provided."
+          community: "Community: A diverse group of people that offers support and empowerment by coming together."
+          participation: "Participation: Here is an opportunity to initiate activities, participate or deliberate on public issues."
+          spirituality: "Spirituality: Here you find spaces, places and groups that pursue a contemplative/spiritual connection."
+      provides_combotype:
+        label: Fulfils Needs
       railway:
         label: Type
       recycling/cans:
@@ -443,6 +576,14 @@ en:
         label: Accepts Paper
       ref:
         label: Reference
+      regional:
+        label: Regional
+        placeholder: "Yes, No, Regional Only..."
+        options:
+          "yes": "Yes: Good choice of regional products in the whole selection, but not solely"
+          "no": "No"
+          only: Regional Only
+          limited: "Limited: only selected products are regional"
       relation:
         label: Type
       religion:
@@ -523,12 +664,17 @@ en:
         placeholder: "Homeless, Disabled, Child, etc"
       source:
         label: Source
+      species:
+        label: "Species: scientific name"
+        placeholder: main key latin
       sport:
         label: Sport
       sport_ice:
         label: Sport
       sport_racing:
         label: Sport
+      start_date:
+        label: Start Date
       structure:
         label: Structure
         placeholder: Unknown
@@ -562,6 +708,26 @@ en:
           pitlatrine: Pit/Latrine
           chemical: Chemical
           bucket: Bucket
+      topic:
+        label: Topic of an Organisation
+        placeholder: "food+drink , water, land, ..."
+        options:
+          food+drink: "Food & Drink: Organisations that care about food/drink."
+          water: "Water: Here you can find organisations who care about water."
+          land: "Land: Here you can find organisations who care about land - the land we all need to find shelter and/or to work on."
+          mobility: "Mobility: Here you find organisations who care about mobility."
+          health: "Health: Here you find organisations that care about keeping and making us healthy."
+          culture: "Culture: Organisations who care about culture."
+          safety: "Safety: Organisations who care about security."
+          housing: "Housing: Organisations who care about housing."
+          spaces: "Free Space: Organisations which are concerned about open spaces."
+          objects_of_utility: "Objects of Utility: Organisations devoted to objects of utility."
+          clothes: "Clothes-related organisations (traders,company HQs,charity organisations with focus on clothes)."
+          learning_opportunities: "Knowledge & Skills: Organisations devoted to science and education."
+          energy: Energy-focused organisations
+          community: Community-building and empowering organisations.
+          participation: "Participation: Organisations who organise participation in various field."
+          spirituality: "Spirituality: Spritiual organisations"
       tourism:
         label: Type
       towertype:
@@ -697,6 +863,9 @@ en:
       amenity/bicycle_repair_station:
         name: Bicycle Repair Station
         terms: "<translate with synonyms or related terms for 'Bicycle Repair Station', separated by commas>"
+      amenity/biergarten:
+        name: Biergarten
+        terms: "<translate with synonyms or related terms for 'Biergarten', separated by commas>"
       amenity/boat_rental:
         name: Boat Rental
         terms: "<translate with synonyms or related terms for 'Boat Rental', separated by commas>"
@@ -1057,6 +1226,9 @@ en:
       building/warehouse:
         name: Warehouse
         terms: "<translate with synonyms or related terms for 'Warehouse', separated by commas>"
+      club:
+        name: club
+        terms: "<translate with synonyms or related terms for 'club', separated by commas>"
       craft:
         name: Craft
         terms: "<translate with synonyms or related terms for 'Craft', separated by commas>"
@@ -1396,6 +1568,18 @@ en:
       historic/wayside_shrine:
         name: Wayside Shrine
         terms: "<translate with synonyms or related terms for 'Wayside Shrine', separated by commas>"
+      identity/commons:
+        name: "Identity: Commons"
+        terms: "<translate with synonyms or related terms for 'Identity: Commons', separated by commas>"
+      identity/global_ecovillage_network:
+        name: "identity: Global Ecovillage Network"
+        terms: "<translate with synonyms or related terms for 'identity: Global Ecovillage Network', separated by commas>"
+      interaction/bartering:
+        name: "Interaction: Bartering"
+        terms: "<translate with synonyms or related terms for 'Interaction: Bartering', separated by commas>"
+      interaction/lending:
+        name: "Interaction: Lending"
+        terms: "<translate with synonyms or related terms for 'Interaction: Lending', separated by commas>"
       junction:
         name: Junction
         terms: "<translate with synonyms or related terms for 'Junction', separated by commas>"
@@ -1471,6 +1655,9 @@ en:
       leisure/common:
         name: Common
         terms: "<translate with synonyms or related terms for 'Common', separated by commas>"
+      leisure/communitygarden:
+        name: Community Garden
+        terms: "<translate with synonyms or related terms for 'Community Garden', separated by commas>"
       leisure/dog_park:
         name: Dog Park
         terms: "<translate with synonyms or related terms for 'Dog Park', separated by commas>"
@@ -1483,6 +1670,9 @@ en:
       leisure/golf_course:
         name: Golf Course
         terms: "<translate with synonyms or related terms for 'Golf Course', separated by commas>"
+      leisure/hackerspace:
+        name: Hackerspace
+        terms: "<translate with synonyms or related terms for 'Hackerspace', separated by commas>"
       leisure/ice_rink:
         name: Ice Rink
         terms: "<translate with synonyms or related terms for 'Ice Rink', separated by commas>"
@@ -1792,6 +1982,12 @@ en:
       power/transformer:
         name: Transformer
         terms: "<translate with synonyms or related terms for 'Transformer', separated by commas>"
+      provides/food+drink:
+        name: "provides: food & drink"
+        terms: "<translate with synonyms or related terms for 'provides: food & drink', separated by commas>"
+      provides/water:
+        name: "provides: water"
+        terms: "<translate with synonyms or related terms for 'provides: water', separated by commas>"
       public_transport/platform:
         name: Platform
         terms: "<translate with synonyms or related terms for 'Platform', separated by commas>"
@@ -2176,6 +2372,9 @@ en:
       shop/wine:
         name: Wine Shop
         terms: "<translate with synonyms or related terms for 'Wine Shop', separated by commas>"
+      tm_chain_provides:
+        name: "Fulfils Needs:"
+        terms: "<translate with synonyms or related terms for 'Fulfils Needs:', separated by commas>"
       tourism:
         name: Tourism
         terms: "<translate with synonyms or related terms for 'Tourism', separated by commas>"
@@ -2239,6 +2438,15 @@ en:
       traffic_calming/table:
         name: Raised Pedestrian Crossing
         terms: "<translate with synonyms or related terms for 'Raised Pedestrian Crossing', separated by commas>"
+      transfor-direct:
+        name: "TransforMap: POI fulfilling direct needs"
+        terms: "<translate with synonyms or related terms for 'TransforMap: POI fulfilling direct needs', separated by commas>"
+      transfor-indirect:
+        name: "TransforMap: Organisation caring about needs"
+        terms: "<translate with synonyms or related terms for 'TransforMap: Organisation caring about needs', separated by commas>"
+      transfortest:
+        name: TransforMap Object
+        terms: "<translate with synonyms or related terms for 'TransforMap Object', separated by commas>"
       type/boundary:
         name: Boundary
         terms: "<translate with synonyms or related terms for 'Boundary', separated by commas>"
