@@ -7,17 +7,15 @@ iD.ui.preset.typeMCombo = function(field, context) {
         input;
 
     function mcombo(selection) {
-        console.log("!mcombo");
-
-        // var combobox = d3.combobox();
-
-        input = selection.selectAll('input')
-            .data([0]);
+        // console.log("!mcombo");
+        input = selection.selectAll('select').data([0]);
 
         var enter = input.enter()
-            .append('input')
-            .attr('type', 'text')
+            .append('select')
+            .attr('multiple','multiple')
             .attr('id', 'preset-input-' + field.id);
+
+        var combobox = $("#preset-input-"+field.id);
 
         if (optstrings) { enter.attr('readonly', 'readonly'); }
 
@@ -48,22 +46,11 @@ iD.ui.preset.typeMCombo = function(field, context) {
                 }
             });
 
-
-
         function stringsLoaded() {
+            // console.log("!stringsLoaded");
             var keys = _.keys(strings),
                 strs = [],
                 placeholders;
-
-            /*    
-            combobox.data(keys.map(function(k) {
-                var s = strings[k],
-                    o = {};
-                o.title = o.value = s;
-                if (s.length < 20) { strs.push(s); }
-                return o;
-            }));
-            */
 
             var data=keys.map(function(k) {
                 var s = strings[k],
@@ -74,54 +61,58 @@ iD.ui.preset.typeMCombo = function(field, context) {
             });
 
             placeholders = strs.length > 1 ? strs : keys;
-            input.attr('placeholder', field.placeholder() ||
-                (placeholders.slice(0, 3).join(', ') + '...'));
-
-            var combobox = $("<select class='hidden' multiple='multiple'></select>").attr("id","blabla");
-             // .attr("id", id).attr("name", name);
-
+           
             $.each(keys, function (i, o) {
                 combobox.append("<option>" + o + "</option>");
             });
 
-            input.on('focus', function() {
-                console.log("input focus");
-                $(combobox).removeClass("hidden");
-                combobox.focus();
-            });
-
-
-            $(selection[0]).append(combobox);
-
-            console.log("cbox",combobox);
-      
+            /* 
+            console.log("cbox",combobox);      
             console.log("keys",keys);
             console.log("data",data);
+            */
 
             combobox.on("blur",function() {
                 console.log("combobox blur");
-                $(combobox).addClass("hidden");
+                change();
             }).on("change",function() {
                 console.log("combobox changed");
-            }).SumoSelect();
+                change();
+            });
 
+
+            var display_text = 
+                field.placeholder() || 
+                (placeholders.slice(0, 3).join(', ') + '...');
+
+
+            combobox.SumoSelect({ 
+                placeholder : display_text,
+                csvDispCount : 0 
+            });
+
+            // input.attr('placeholder', display_text );
+            //$(".SlectBox .placeholder").text( display_text );
 
         }
-    }
 
-    function change() {
-        var optstring = _.find(_.keys(strings), function(k) { return strings[k] === input.value(); }),
-            value = optstring || (input.value()
-                .split(';')
-                .map(function(s) { return s.trim(); })
-                .join(';')
-                .replace(/\s+/g, '_'));
+        function change() {
+            console.log("!change");
+            var optstring = _.find(_.keys(strings), function(k) { return strings[k] === input.value(); }),
+                value = 
+                    optstring || (combobox
+                        .val()
+                        .map(function(s) { return s.trim(); })
+                        .join(';')
+                        .replace(/\s+/g, '_'));
 
-        if (field.type === 'typeMCombo' && !value) value = 'yes';
+            // if (field.type === 'typeMCombo' && !value) value = 'yes';
 
-        var t = {};
-        t[field.key] = value || undefined;
-        event.change(t);
+            var t = {};
+            t[field.key] = value || undefined;
+            event.change(t);
+        }
+
     }
 
     mcombo.tags = function(tags) {
