@@ -280,7 +280,7 @@ d3.mcombobox = function() {
                 val = val +"; "+key;
             }
             // console.log("res",val);
-            return val.replace(/^;[\s]*/,'').replace(/[\s]*;[\s]*;[\s]*/,'; ');
+            return val.replace(/^;[\s]*/,'').replace(/[\s]*;[\s]*;[\s]*/,'; ').replace(/;[\s]*$/,'');
         }
 
         function accept(d) {
